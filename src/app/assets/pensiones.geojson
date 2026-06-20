@@ -79,41 +79,124 @@
         "type": "Point",
         "coordinates": [
           2.80468,
-          41.97585
+         41.97585
         ]
       }
     },
      {
       "type": "Feature",
       "properties": {
-        "id": "1",
-        "name": "",
-        "url": "",
+        "id": "4",
+        "name": "Bed & Breakfast 10 Girona",
+        "url": "bedandbreakfastgirona.com/",
         "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": "",
-        "estrelles":"4"
+        "direccio": "C/ Saragossa, 10. 17003 Girona.",
+        "telf": "972 665 637",
+        "email": "h10girona@gmail.com"
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+           2.81584,
+          41.97171
+        ]
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "5",
+        "name": "Bellmirall Pensió",
+        "url": "www.bellmirall.cat",
+        "img": "",
+        "direccio": "C/ Bellmirall, 3. 17004 Girona.",
+        "telf": "972 204 009",
+        "email": "reserves@bellmirall.cat"
+
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           2.8137910846,
-          41.9703441268
+          2.82638
         ]
       }
     },
+
      {
       "type": "Feature",
       "properties": {
-        "id": "1",
-        "name": "",
-        "url": "",
+        "id": "6",
+        "name": "Casa Cúndaro",
+        "url": "www.casacundaro.com",
         "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": "",
-        "estrelles":"4"
+        "direccio": "Pujada de la Catedral, 7. 17004 Girona.",
+        "telf": "972 223 583",
+        "email": "info@casacundaro.com"
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8256104677,
+          41.9867458285
+        ]
+      }
+    },
+
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "6",
+        "name": "El Porxo B&B",
+        "url": "https://www.elporxobb.com",
+        "img": "",
+        "direccio": "Pujada de la Creu de Palau, 54. 17003 Girona.",
+        "telf": "+34 655 497 031",
+        "email": "reservations@elporxobb.com"
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.81972,
+         41.96142
+        ]
+      }
+    },
+       {
+      "type": "Feature",
+      "properties": {
+        "id": "7",
+        "name": "Hostal Milana",
+        "url": "https://milanagirona.com",
+        "img": "",
+        "direccio": "Plaça de Sant Pere, 8. 17007 Girona.",
+        "telf": "625 049 142",
+        "email": "info@milanagirona.com"
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         2.8255,
+        41.9898
+        ]
+      }
+    },
+
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "8",
+        "name": "La 19",
+        "url": "https://www.la19girona.com/",
+        "img": "",
+        "direccio": "Carrer mare de Déu del Mont, 19. 17005 Girona",
+        "telf": "693 005 090",
+        "email": "la19girona@gmail.com"
+
       },
       "geometry": {
         "type": "Point",
@@ -127,14 +210,14 @@
      {
       "type": "Feature",
       "properties": {
-        "id": "1",
+        "id": "",
         "name": "",
         "url": "",
         "img": "",
         "direccio": "",
         "telf": "",
-        "email": "",
-        "estrelles":"4"
+        "email": ""
+
       },
       "geometry": {
         "type": "Point",
@@ -144,18 +227,17 @@
         ]
       }
     },
-
      {
       "type": "Feature",
       "properties": {
-        "id": "1",
+        "id": "",
         "name": "",
         "url": "",
         "img": "",
         "direccio": "",
         "telf": "",
-        "email": "",
-        "estrelles":"4"
+        "email": ""
+
       },
       "geometry": {
         "type": "Point",
