@@ -1,0 +1,169 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1",
+        "name": "Bells Oficis B&B",
+        "url": "www.bellsoficis.com",
+        "img": "",
+        "direccio": "Germans Busquets, 2, 2on (Rambla Llibertat). 17004 Girona.",
+        "telf": "679460457",
+        "email": "info@bellsoficis.com"
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.8240991541,
+        41.9831768779
+        ]
+      }
+    },
+
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "2",
+        "name": "Pensió Ibis Budget Girona Costa Brava",
+        "url": "www.accorhotels.com/es/hotel-6815-ibis-budget-girona-costa-brava/index.shtml",
+        "img": "",
+        "direccio": "C/ Francesc Ferrer, 16-18 . 17006 Girona.",
+        "telf": "972 110 846",
+        "email": "h6815@accor.com"
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.81762,
+          41.9982
+        ]
+      }
+    },
+
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "3",
+        "name": "Pensió Viladomat",
+        "url": "www.pensioviladomat.cat",
+        "img": "",
+        "direccio": "C/ Ciutadans, 5 . 17004 Girona.",
+        "telf": "972 203 176",
+        "email": "info@pensioviladomat.com"
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         2.82509,
+         41.98371
+        ]
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "3",
+        "name": "Alhambra",
+        "url": "hostel-alhambra-girona.com/",
+        "img": "",
+        "direccio": "Bassegoda, 18. 17006 Girona.",
+        "telf": "649 945 131",
+        "email": "nfo@hostel-alhambra-girona.com"
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.80468,
+          41.97585
+        ]
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "1",
+        "name": "",
+        "url": "",
+        "img": "",
+        "direccio": "",
+        "telf": "",
+        "email": "",
+        "estrelles":"4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8137910846,
+          41.9703441268
+        ]
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "1",
+        "name": "",
+        "url": "",
+        "img": "",
+        "direccio": "",
+        "telf": "",
+        "email": "",
+        "estrelles":"4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8137910846,
+          41.9703441268
+        ]
+      }
+    },
+
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "1",
+        "name": "",
+        "url": "",
+        "img": "",
+        "direccio": "",
+        "telf": "",
+        "email": "",
+        "estrelles":"4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8137910846,
+          41.9703441268
+        ]
+      }
+    },
+
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "1",
+        "name": "",
+        "url": "",
+        "img": "",
+        "direccio": "",
+        "telf": "",
+        "email": "",
+        "estrelles":"4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8137910846,
+          41.9703441268
+        ]
+      }
+    }
+  ]
+  }
