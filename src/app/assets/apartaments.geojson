@@ -338,8 +338,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-         2.82471,
-        41.98252
+          2.82471,
+          41.98252
         ]
       }
     },
@@ -385,18 +385,284 @@
       "type": "Feature",
       "properties": {
         "id": "21",
-        "name": "",
-        "url": "",
+        "name": "Casa amb jardí al costat del Barri Vell",
+        "url": "no té web",
         "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
+        "direccio": "Carrer de la Muralla, 3. 17004 Girona",
+        "telf": "610633427 / 618446958",
+        "email": "reserves@rimarent.com"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.8240991541,
-          41.9831768779
+          2.82964,
+          41.98622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "22",
+        "name": "Del Vi Apartaments",
+        "url": "www.delviapartments.com",
+        "img": "",
+        "direccio": "Plaça del Vi, 9. 17004 Girona.",
+        "telf": "972 483 038",
+        "email": "info@delviapartaments.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82446,
+          41.98314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "23",
+        "name": "Dormir Sleep apartment Girona",
+        "url": "no té web",
+        "img": "",
+        "direccio": "C. Joaquim Botet i Sisó, núm. 7, 2n 1a. 17003 Girona.",
+        "telf": "626 401 163 / 666 718 008",
+        "email": "miriam.montes.guidux@gmail.com / bernagual@gmail.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82562,
+          41.97245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "24",
+        "name": "El Reientinc Apartament Rural",
+        "url": "www.gironaapartments.cat",
+        "img": "",
+        "direccio": "C/ Carme Auguet, 5. 17007 Girona.",
+        "telf": "608 491 770",
+        "email": "reientinc@gmail.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8377730845,
+          41.9891953992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "25",
+        "name": "Girona Central Suites",
+        "url": "no té url",
+        "img": "",
+        "direccio": "Plaça Marquès de Camps 8. 17001 Girona.",
+        "telf": "695 097 612",
+        "email": "bookings@girona-accommodation.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.81871,
+          41.98196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "26",
+        "name": "Girona Housing ",
+        "url": "no té web",
+        "img": "",
+        "direccio": "C/ Ginesta 9. 17002 Girona.",
+        "telf": "677705585",
+        "email": "gironahousing@gmail.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82241,
+          41.98171
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "27",
+        "name": "Girona Riverside",
+        "url": "no té web",
+        "img": "",
+        "direccio": "C/ Ballesteries, 23. 17004 Girona.",
+        "telf": "655 341 258",
+        "email": "no té email"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82479,
+          41.98589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "28",
+        "name": "Girorooms",
+        "url": "no té web",
+        "img": "",
+        "direccio": "C/ Bellaire, 9-11, 1-2. 17004 Girona.",
+        "telf": "972 825 180 / 680 703 992",
+        "email": "nfo@girorooms.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8247224295,
+          41.9892213224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "29",
+        "name": "Hap-Dreams",
+        "url": "https://www.sistachrentals.com/en",
+        "img": "",
+        "direccio": "C/ Portal Nou, 28 . 17004 Girona.",
+        "telf": "972 203 525",
+        "email": "dreams@grn.es"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8271505764,
+          41.9841722329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "30",
+        "name": "Històric",
+        "url": "https://hotelhistoric.com/",
+        "img": "",
+        "direccio": "C/ Bellmirall, 4 . 17004 Girona.",
+        "telf": "972 223 583",
+        "email": "info@hotelhistoric.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+           2.8265662158,
+          41.9859907083
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "31",
+        "name": "Homely Girona Apartment",
+        "url": "no té página web",
+        "img": "",
+        "direccio": "Ronda Sant Antoni Maria Claret, 26, 2-1. 17002 Girona.",
+        "telf": "687 731 230",
+        "email":"homelygirona@gmail.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         2.821,
+        41.97944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "32",
+        "name": "Sant Francesc 18",
+        "url": "no té página web",
+        "img": "",
+        "direccio": "Av. Sant Francesc, 18. 17001 Girona.",
+        "telf": "607117543",
+        "email": "santfrancesc18@gmail.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82181,
+          41.98252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "33",
+        "name": "Sleep & Stay",
+        "url": "www.sleepandstay.com/",
+        "img": "",
+        "direccio": "C/ Bonaventura Carreras i Peralta, 2. 17004 Girona.",
+        "telf": "615 664 510",
+        "email": "info@sleepandstay.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82572,
+          41.98486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "34",
+        "name": "Sleep in Girona Apartment",
+        "url": "www.sleepingirona.com",
+        "img": "",
+        "direccio": "C/ Ciutadans, 13, 2on. 17004 Girona.",
+        "telf": "972 223 583",
+        "email": "info@sleepingirona.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8254001313,
+          41.9841876073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "35",
+        "name": "StayinGirona",
+        "url": "www.stayingirona.com/",
+        "img": "",
+        "direccio": "C/ Carme, 73. 17003 Girona.",
+        "telf": "680299397",
+        "email": "hello@stayingirona.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         2.82459,
+        41.97825
         ]
       }
     }
