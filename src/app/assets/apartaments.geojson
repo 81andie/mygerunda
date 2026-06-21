@@ -1,0 +1,309 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1",
+        "name": "Alemanys 5",
+        "url": "Webwww.alemanys5.com",
+        "img": "",
+        "direccio": "C/ Alemanys, 5. 17004 Girona.",
+        "telf": "No hi ha telf",
+        "email": "mribera@gmail.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82686,
+          41.98632
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2",
+        "name": "Apartament AG Girona",
+        "url": "",
+        "img": "",
+        "direccio": "C. Olivera, 24 Baixos. 17004 Girona.",
+        "telf": "972 490 276 / 626 396 322",
+        "email": "cancarrerasmas@hotmail.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82674,
+          41.97559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3",
+        "name": "Apartament Ballesteries 19",
+        "url": "",
+        "img": "",
+        "direccio": "Carrer Ballesteries, 19. 17004 Girona.",
+        "telf": "666 029 269 / 675 393 332",
+        "email": "ballesteries19@gmail.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82479,
+          41.98581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4",
+        "name": "Apartament Carme 38",
+        "url": "https://www.airbnb.es/users/123616347/listings",
+        "img": "",
+        "direccio": "Carrer del Carme, 38. 17004 Girona.",
+        "telf": "609 381 066 / 972 411 421",
+        "email": "xnadal@sgelectronics.es"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82708,
+          41.97444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "5",
+        "name": "Apartament Centre Rei Martí",
+        "url": "no té web",
+        "img": "",
+        "direccio": "Pujada del Rei Martí, 8-12, baixos 1a.. 17004 Girona.",
+        "telf": "649 573 518",
+        "email": "info@littlehomegirona.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         2.8254,
+         41.98861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6",
+        "name": "Apartament Centre Torre Girona",
+        "url": "no té web",
+        "img": "",
+        "direccio": "C/ Santa Eugènia, 11 10è 1a. 17005 Girona.",
+        "telf": "660 432 136",
+        "email": "apartamenttorregirona@gmail.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.81692,
+          41.98123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7",
+        "name": "Apartament La Força 8",
+        "url": "no té web",
+        "img": "",
+        "direccio": "C. La Força 8, 2n pis. 17001 Girona.",
+        "telf": "",
+        "email": "info@apartamentgirona.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82528,
+          41.986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "8",
+        "name": "Apartament Margarit",
+        "url": "no té web",
+        "img": "",
+        "direccio": "C. Migdia, 25, bl.C, 1r 3ª. 17002 Girona.",
+        "telf": "87 099 417",
+        "email": "silxat@gmail.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         2.82066,
+        41.97629
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9",
+        "name": "Apartament Pou Rodó",
+        "url": "no té web",
+        "img": "",
+        "direccio": "C/ Pou Rodó, 7-9. 17004 Girona",
+        "telf": "972 590 389",
+        "email": "smartib@ya.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82487,
+          41.98872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "10",
+        "name": "Apartament Priçosa",
+        "url": "no té web",
+        "img": "",
+        "direccio": "C. Força 23, 1r 3a. 17004 Girona.",
+        "telf": "660 924 039 / 677 321 312",
+        "email": "pricosagirona@gmail.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.82514,
+        41.98646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "11",
+        "name": "Apartament Universal Flat",
+        "url": "www.apartmentrentgirona.com",
+        "img": "",
+        "direccio": "Rambla de la Llibertat, 7, 1-1. 17004 Girona.",
+        "telf": "699 236 277",
+        "email": "apartmentrentgirona@gmail.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8239,
+          41.98366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "12",
+        "name": "Apartaments Girona Centre",
+        "url": "www.gironacentre.com",
+        "img": "648 982 866",
+        "direccio": "Rambla Llibertat, 43. 17004 Girona.",
+        "telf": "",
+        "email": "nfo@gironacentre.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82429,
+          41.98456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "",
+        "name": "",
+        "url": "",
+        "img": "",
+        "direccio": "",
+        "telf": "",
+        "email": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8240991541,
+          41.9831768779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "",
+        "name": "",
+        "url": "",
+        "img": "",
+        "direccio": "",
+        "telf": "",
+        "email": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8240991541,
+          41.9831768779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "",
+        "name": "",
+        "url": "",
+        "img": "",
+        "direccio": "",
+        "telf": "",
+        "email": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8240991541,
+          41.9831768779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "",
+        "name": "",
+        "url": "",
+        "img": "",
+        "direccio": "",
+        "telf": "",
+        "email": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8240991541,
+          41.9831768779
+        ]
+      }
+    }
+  ]
+}
