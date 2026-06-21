@@ -1,17 +1,15 @@
 import { Component, signal, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { initFlowbite } from 'flowbite';
-import { Navbar } from "./components/navbar/navbar";
-import { Carrussel } from "./components/carrussel/carrussel";
-import { Hero } from "./components/hero/hero";
+import { Inicio } from './components/inicio/inicio';
 
-import { BentoGrid } from "./components/bento-grid/bento-grid";
-import { Cards } from "./components/cards/cards";
 import { Footer } from "./components/footer/footer";
+import { Navbar } from "./components/navbar/navbar";
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar, Carrussel, Hero, BentoGrid, Cards, Footer],
+  imports: [RouterOutlet, Footer, Navbar],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

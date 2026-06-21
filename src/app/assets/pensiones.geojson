@@ -201,8 +201,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.8137910846,
-          41.9703441268
+         2.81029,
+         41.9742
         ]
       }
     },
@@ -210,40 +210,40 @@
      {
       "type": "Feature",
       "properties": {
-        "id": "",
-        "name": "",
-        "url": "",
+        "id": "9",
+        "name": "Montjuïc B&B",
+        "url": "www.montjuicbb.com",
         "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
+        "direccio": "C/ Onze de setembre 1. 17007 Girona.",
+        "telf": "(+34) 972 427 771 / (+34) 606 998 955",
+        "email": "reserva@montjuicbb.com"
 
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.8137910846,
-          41.9703441268
+          2.82886,
+         41.99316
         ]
       }
     },
      {
       "type": "Feature",
       "properties": {
-        "id": "",
-        "name": "",
-        "url": "",
+        "id": "10",
+        "name": "Pensió Borràs",
+        "url": "https://pensionborras.com",
         "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
+        "direccio": "Travessia Auriga, 6. Girona.",
+        "telf": "656 891 029",
+        "email": "recepcion@pensionborras.com"
 
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.8137910846,
-          41.9703441268
+          2.8252,
+          41.9822
         ]
       }
     }
