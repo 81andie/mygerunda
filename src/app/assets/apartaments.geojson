@@ -6,7 +6,7 @@
       "properties": {
         "id": "1",
         "name": "Alemanys 5",
-        "url": "Webwww.alemanys5.com",
+        "url": "www.alemanys5.com",
         "img": "",
         "direccio": "C/ Alemanys, 5. 17004 Girona.",
         "telf": "No hi ha telf",
@@ -25,7 +25,7 @@
       "properties": {
         "id": "2",
         "name": "Apartament AG Girona",
-        "url": "",
+        "url": "no té web",
         "img": "",
         "direccio": "C. Olivera, 24 Baixos. 17004 Girona.",
         "telf": "972 490 276 / 626 396 322",
@@ -44,7 +44,7 @@
       "properties": {
         "id": "3",
         "name": "Apartament Ballesteries 19",
-        "url": "",
+        "url": "no té web",
         "img": "",
         "direccio": "Carrer Ballesteries, 19. 17004 Girona.",
         "telf": "666 029 269 / 675 393 332",
@@ -91,8 +91,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-         2.8254,
-         41.98861
+          2.8254,
+          41.98861
         ]
       }
     },
@@ -148,8 +148,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-         2.82066,
-        41.97629
+          2.82066,
+          41.97629
         ]
       }
     },
@@ -186,8 +186,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-        2.82514,
-        41.98646
+          2.82514,
+          41.98646
         ]
       }
     },
@@ -232,13 +232,70 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "",
-        "name": "",
-        "url": "",
+        "id": "13",
+        "name": "Apartaments Livingirona ",
+        "url": "www.livingirona.com",
         "img": "",
-        "direccio": "",
-        "telf": "",
+        "direccio": "C/ Francesc Mateu, 2 . 17007 Girona.",
+        "telf": "649 424 949",
         "email": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.83471,
+          41.99528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "14",
+        "name": "Apartaments Pau Casals",
+        "url": "no té página web",
+        "img": "",
+        "direccio": "Pau Casals, 32. 17001 Girona.",
+        "telf": "972 224 880 / 661 279 445",
+        "email": "carmina.sojo@gmail.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.81221,
+          41.98291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "15",
+        "name": "Apartaments RC Girona",
+        "url": "www.rasetciutadans.com",
+        "img": "",
+        "direccio": "Carrer de la Llebre, 3. 17004 Girona.",
+        "telf": "661909990",
+        "email": "admin@rasetciutadans.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82573,
+          41.98409
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "16",
+        "name": "Apartment Rentals Girona",
+        "url": "https://sites.google.com/view/apartmentrentalsgirona/home",
+        "img": "",
+        "direccio": "Carrer del Carme, 19. 17004 girona.",
+        "telf": "682 806 871",
+        "email": "info@apartmentrentalsgirona.com"
       },
       "geometry": {
         "type": "Point",
@@ -251,45 +308,83 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "",
-        "name": "",
-        "url": "",
+        "id": "17",
+        "name": "B&B Plaça Bell-Lloc",
+        "url": "no té url",
         "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
+        "direccio": "Plaça Bell-Lloc, 4. 17002 Girona.",
+        "telf": "629 374 132",
+        "email": "no té email"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.8240991541,
-          41.9831768779
+          2.82455,
+          41.98025
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "",
-        "name": "",
-        "url": "",
+        "id": "18",
+        "name": "B&B Plaça Bell-Lloc",
+        "url": "no té página web",
         "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
+        "direccio": "Plaça Bell-Lloc, 4. 17002 Girona.",
+        "telf": "629 374 132",
+        "email": "no té email"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.8240991541,
-          41.9831768779
+         2.82471,
+        41.98252
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "",
+        "id": "19",
+        "name": "Bravissimo apartaments",
+        "url": "https://bravissimo-girona.com/ca/",
+        "img": "",
+        "direccio": "Plaça de Catalunya, 16. 17004 Girona.",
+        "telf": "872 220 440",
+        "email": "hello@bravissimo-girona.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82404,
+          41.98118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "20",
+        "name": "Can Feliu",
+        "url": "no té web",
+        "img": "",
+        "direccio": "C/ de les monges, 23. 17007 Girona.",
+        "telf": "(+34) 689 470 912",
+        "email": "mickjcampbell@yahoo.es"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82471,
+          41.98252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "21",
         "name": "",
         "url": "",
         "img": "",
