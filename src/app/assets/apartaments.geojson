@@ -7,7 +7,7 @@
         "id": "1",
         "name": "Alemanys 5",
         "url": "www.alemanys5.com",
-        "img": "",
+        "img": "assets/alemany5.jpg",
         "direccio": "C/ Alemanys, 5. 17004 Girona.",
         "telf": "No hi ha telf",
         "email": "mribera@gmail.com"
@@ -26,7 +26,7 @@
         "id": "2",
         "name": "Apartament AG Girona",
         "url": "no té web",
-        "img": "",
+        "img": "assets/aggirona.jpg",
         "direccio": "C. Olivera, 24 Baixos. 17004 Girona.",
         "telf": "972 490 276 / 626 396 322",
         "email": "cancarrerasmas@hotmail.com"
@@ -45,7 +45,7 @@
         "id": "3",
         "name": "Apartament Ballesteries 19",
         "url": "no té web",
-        "img": "",
+        "img": "assets/ballesteries19.jpg",
         "direccio": "Carrer Ballesteries, 19. 17004 Girona.",
         "telf": "666 029 269 / 675 393 332",
         "email": "ballesteries19@gmail.com"
@@ -64,7 +64,7 @@
         "id": "4",
         "name": "Apartament Carme 38",
         "url": "https://www.airbnb.es/users/123616347/listings",
-        "img": "",
+        "img": "assets/ap.carme38.jpg",
         "direccio": "Carrer del Carme, 38. 17004 Girona.",
         "telf": "609 381 066 / 972 411 421",
         "email": "xnadal@sgelectronics.es"
@@ -83,7 +83,7 @@
         "id": "5",
         "name": "Apartament Centre Rei Martí",
         "url": "no té web",
-        "img": "",
+        "img": "assets/reimart.jpg",
         "direccio": "Pujada del Rei Martí, 8-12, baixos 1a.. 17004 Girona.",
         "telf": "649 573 518",
         "email": "info@littlehomegirona.com"
@@ -102,7 +102,7 @@
         "id": "6",
         "name": "Apartament Centre Torre Girona",
         "url": "no té web",
-        "img": "",
+        "img": "assets/torregi1.jpg",
         "direccio": "C/ Santa Eugènia, 11 10è 1a. 17005 Girona.",
         "telf": "660 432 136",
         "email": "apartamenttorregirona@gmail.com"
@@ -121,7 +121,7 @@
         "id": "7",
         "name": "Apartament La Força 8",
         "url": "no té web",
-        "img": "",
+        "img": "assets/laforca8.jpg",
         "direccio": "C. La Força 8, 2n pis. 17001 Girona.",
         "telf": "",
         "email": "info@apartamentgirona.com"
@@ -140,7 +140,7 @@
         "id": "8",
         "name": "Apartament Margarit",
         "url": "no té web",
-        "img": "",
+        "img": "assets/margarit.jpg",
         "direccio": "C. Migdia, 25, bl.C, 1r 3ª. 17002 Girona.",
         "telf": "87 099 417",
         "email": "silxat@gmail.com"
@@ -159,7 +159,7 @@
         "id": "9",
         "name": "Apartament Pou Rodó",
         "url": "no té web",
-        "img": "",
+        "img": "assets/pourodo.jpg",
         "direccio": "C/ Pou Rodó, 7-9. 17004 Girona",
         "telf": "972 590 389",
         "email": "smartib@ya.com"
@@ -178,7 +178,7 @@
         "id": "10",
         "name": "Apartament Priçosa",
         "url": "no té web",
-        "img": "",
+        "img": "assets/aptpricosa.jpg",
         "direccio": "C. Força 23, 1r 3a. 17004 Girona.",
         "telf": "660 924 039 / 677 321 312",
         "email": "pricosagirona@gmail.com"
@@ -197,7 +197,7 @@
         "id": "11",
         "name": "Apartament Universal Flat",
         "url": "www.apartmentrentgirona.com",
-        "img": "",
+        "img": "assets/universal1.jpg",
         "direccio": "Rambla de la Llibertat, 7, 1-1. 17004 Girona.",
         "telf": "699 236 277",
         "email": "apartmentrentgirona@gmail.com"
@@ -216,9 +216,9 @@
         "id": "12",
         "name": "Apartaments Girona Centre",
         "url": "www.gironacentre.com",
-        "img": "648 982 866",
+        "img": "assets/gironacentre.jpg",
         "direccio": "Rambla Llibertat, 43. 17004 Girona.",
-        "telf": "",
+        "telf": "648 982 866",
         "email": "nfo@gironacentre.com"
       },
       "geometry": {
@@ -235,7 +235,7 @@
         "id": "13",
         "name": "Apartaments Livingirona ",
         "url": "www.livingirona.com",
-        "img": "",
+        "img": "assets/livingirona.jpg",
         "direccio": "C/ Francesc Mateu, 2 . 17007 Girona.",
         "telf": "649 424 949",
         "email": ""
@@ -254,7 +254,7 @@
         "id": "14",
         "name": "Apartaments Pau Casals",
         "url": "no té página web",
-        "img": "",
+        "img": "assets/paucasals.jpg",
         "direccio": "Pau Casals, 32. 17001 Girona.",
         "telf": "972 224 880 / 661 279 445",
         "email": "carmina.sojo@gmail.com"
@@ -273,7 +273,7 @@
         "id": "15",
         "name": "Apartaments RC Girona",
         "url": "www.rasetciutadans.com",
-        "img": "",
+        "img": "assets/RCGirona.jpg",
         "direccio": "Carrer de la Llebre, 3. 17004 Girona.",
         "telf": "661909990",
         "email": "admin@rasetciutadans.com"
@@ -292,7 +292,7 @@
         "id": "16",
         "name": "Apartment Rentals Girona",
         "url": "https://sites.google.com/view/apartmentrentalsgirona/home",
-        "img": "",
+        "img": "assets/rentalsGirona.jpg",
         "direccio": "Carrer del Carme, 19. 17004 girona.",
         "telf": "682 806 871",
         "email": "info@apartmentrentalsgirona.com"
@@ -330,7 +330,7 @@
         "id": "18",
         "name": "B&B Plaça Bell-Lloc",
         "url": "no té página web",
-        "img": "",
+        "img": "assets/bell-lloc.jpg",
         "direccio": "Plaça Bell-Lloc, 4. 17002 Girona.",
         "telf": "629 374 132",
         "email": "no té email"
@@ -349,7 +349,7 @@
         "id": "19",
         "name": "Bravissimo apartaments",
         "url": "https://bravissimo-girona.com/ca/",
-        "img": "",
+        "img": "assets/bravissimo.jpg",
         "direccio": "Plaça de Catalunya, 16. 17004 Girona.",
         "telf": "872 220 440",
         "email": "hello@bravissimo-girona.com"
@@ -368,7 +368,7 @@
         "id": "20",
         "name": "Can Feliu",
         "url": "no té web",
-        "img": "",
+        "img": "assets/canfeliu.jpg",
         "direccio": "C/ de les monges, 23. 17007 Girona.",
         "telf": "(+34) 689 470 912",
         "email": "mickjcampbell@yahoo.es"
@@ -387,7 +387,7 @@
         "id": "21",
         "name": "Casa amb jardí al costat del Barri Vell",
         "url": "no té web",
-        "img": "",
+        "img": "assets/casamuralla1.jpg",
         "direccio": "Carrer de la Muralla, 3. 17004 Girona",
         "telf": "610633427 / 618446958",
         "email": "reserves@rimarent.com"
@@ -406,7 +406,7 @@
         "id": "22",
         "name": "Del Vi Apartaments",
         "url": "www.delviapartments.com",
-        "img": "",
+        "img": "assets/vi.jpg",
         "direccio": "Plaça del Vi, 9. 17004 Girona.",
         "telf": "972 483 038",
         "email": "info@delviapartaments.com"
@@ -425,7 +425,7 @@
         "id": "23",
         "name": "Dormir Sleep apartment Girona",
         "url": "no té web",
-        "img": "",
+        "img": "assets/sleep.jpg",
         "direccio": "C. Joaquim Botet i Sisó, núm. 7, 2n 1a. 17003 Girona.",
         "telf": "626 401 163 / 666 718 008",
         "email": "miriam.montes.guidux@gmail.com / bernagual@gmail.com"
@@ -444,7 +444,7 @@
         "id": "24",
         "name": "El Reientinc Apartament Rural",
         "url": "www.gironaapartments.cat",
-        "img": "",
+        "img": "assets/reientinc1.jpg",
         "direccio": "C/ Carme Auguet, 5. 17007 Girona.",
         "telf": "608 491 770",
         "email": "reientinc@gmail.com"
@@ -463,7 +463,7 @@
         "id": "25",
         "name": "Girona Central Suites",
         "url": "no té url",
-        "img": "",
+        "img": "assets/agironacentralsuit.jpg",
         "direccio": "Plaça Marquès de Camps 8. 17001 Girona.",
         "telf": "695 097 612",
         "email": "bookings@girona-accommodation.com"
@@ -482,7 +482,7 @@
         "id": "26",
         "name": "Girona Housing ",
         "url": "no té web",
-        "img": "",
+        "img": "assets/girohousing1.jpg",
         "direccio": "C/ Ginesta 9. 17002 Girona.",
         "telf": "677705585",
         "email": "gironahousing@gmail.com"
@@ -501,7 +501,7 @@
         "id": "27",
         "name": "Girona Riverside",
         "url": "no té web",
-        "img": "",
+        "img": "assets/ariverside.jpg",
         "direccio": "C/ Ballesteries, 23. 17004 Girona.",
         "telf": "655 341 258",
         "email": "no té email"
@@ -520,7 +520,7 @@
         "id": "28",
         "name": "Girorooms",
         "url": "no té web",
-        "img": "",
+        "img": "assets/giroooms.jpg",
         "direccio": "C/ Bellaire, 9-11, 1-2. 17004 Girona.",
         "telf": "972 825 180 / 680 703 992",
         "email": "nfo@girorooms.com"
@@ -539,7 +539,7 @@
         "id": "29",
         "name": "Hap-Dreams",
         "url": "https://www.sistachrentals.com/en",
-        "img": "",
+        "img": "assets/hapdreams.jpg",
         "direccio": "C/ Portal Nou, 28 . 17004 Girona.",
         "telf": "972 203 525",
         "email": "dreams@grn.es"
@@ -558,7 +558,7 @@
         "id": "30",
         "name": "Històric",
         "url": "https://hotelhistoric.com/",
-        "img": "",
+        "img": "assets/historic1.jpg",
         "direccio": "C/ Bellmirall, 4 . 17004 Girona.",
         "telf": "972 223 583",
         "email": "info@hotelhistoric.com"
@@ -577,7 +577,7 @@
         "id": "31",
         "name": "Homely Girona Apartment",
         "url": "no té página web",
-        "img": "",
+        "img": "assets/homely1.jpg",
         "direccio": "Ronda Sant Antoni Maria Claret, 26, 2-1. 17002 Girona.",
         "telf": "687 731 230",
         "email":"homelygirona@gmail.com"
@@ -596,7 +596,7 @@
         "id": "32",
         "name": "Sant Francesc 18",
         "url": "no té página web",
-        "img": "",
+        "img": "assets/sanfrancesc.jpg",
         "direccio": "Av. Sant Francesc, 18. 17001 Girona.",
         "telf": "607117543",
         "email": "santfrancesc18@gmail.com"
@@ -615,7 +615,7 @@
         "id": "33",
         "name": "Sleep & Stay",
         "url": "www.sleepandstay.com/",
-        "img": "",
+        "img": "assets/stay1.jpg",
         "direccio": "C/ Bonaventura Carreras i Peralta, 2. 17004 Girona.",
         "telf": "615 664 510",
         "email": "info@sleepandstay.com"
@@ -634,7 +634,7 @@
         "id": "34",
         "name": "Sleep in Girona Apartment",
         "url": "www.sleepingirona.com",
-        "img": "",
+        "img": "assets/asleepingirona.jpg",
         "direccio": "C/ Ciutadans, 13, 2on. 17004 Girona.",
         "telf": "972 223 583",
         "email": "info@sleepingirona.com"
@@ -653,7 +653,7 @@
         "id": "35",
         "name": "StayinGirona",
         "url": "www.stayingirona.com/",
-        "img": "",
+        "img": "assets/stagin.jpg",
         "direccio": "C/ Carme, 73. 17003 Girona.",
         "telf": "680299397",
         "email": "hello@stayingirona.com"
