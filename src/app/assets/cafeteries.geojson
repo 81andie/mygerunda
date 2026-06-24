@@ -99,287 +99,99 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "4",
-        "name": "",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
+        "id": "5",
+        "name": "Café Savoy",
+        "url": "https://www.savoygirona.com/ca",
+        "img": "assets/savoy.jpg",
+        "direccio": "Nou, 3",
+        "telf": "972 203 800",
+        "email": "info@savoygirona.com"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.82686,
-          41.98632
+          2.8225399518855374,
+          41.982871627417126
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "1",
-        "name": "",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
+        "id": "6",
+        "name": "Federal Café",
+        "url": "https://federalcafe.es/girona/",
+        "img": "assets/elfederal.jpg",
+        "direccio": "Carrer de la Força, 9",
+        "telf": "872 264 515",
+        "email": "girona@federalcafe.es"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.82686,
-          41.98632
+          2.8252299114075714,
+          41.985763894785094
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "1",
-        "name": "",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
+        "id": "7",
+        "name": "Cafeteria Nimh's",
+        "url": "no té web",
+        "img": "assets/nims.jpg",
+        "direccio": "Carrer de la Sèquia, 5",
+        "telf": "972 411 514",
+        "email": "no té email"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.82686,
-          41.98632
+          2.8215559095571403,
+          41.98371539923894
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "1",
-        "name": "",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
+        "id": "8",
+        "name": "Casa Moner Casa del xuixo",
+        "url": "casamoner.com",
+        "img": "assets/casamoner.jpg",
+        "direccio": "Pujada de Sant Feliu, 1",
+        "telf": "972 606 426",
+        "email": "hola@casamoner.com"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.82686,
-          41.98632
+          2.82447662119984,
+          41.98667521877066
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "1",
-        "name": "",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
+        "id": "9",
+        "name": "Da Vinci",
+        "url": "grupmardel.com/",
+        "img": "assets/davinci.jpg",
+        "direccio": "Avinguda Jaume I, 30",
+        "telf": "972 647 773",
+        "email": "madelsl@hotmail.com"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.82686,
-          41.98632
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "1",
-        "name": "",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.82686,
-          41.98632
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "1",
-        "name": "",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.82686,
-          41.98632
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "1",
-        "name": "",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.82686,
-          41.98632
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "1",
-        "name": "",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.82686,
-          41.98632
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "1",
-        "name": "",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.82686,
-          41.98632
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "1",
-        "name": "",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.82686,
-          41.98632
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "1",
-        "name": "",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.82686,
-          41.98632
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "1",
-        "name": "",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.82686,
-          41.98632
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "1",
-        "name": "",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.82686,
-          41.98632
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "1",
-        "name": "",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.82686,
-          41.98632
+
+           2.8201463500354405,
+           41.98465567132481
         ]
       }
     }
+
   ]
 }
