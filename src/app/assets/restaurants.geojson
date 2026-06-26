@@ -224,8 +224,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-        2.8235291114074825,
-        41.985064320380026
+          2.8235291114074825,
+          41.985064320380026
         ]
       }
     },
@@ -243,8 +243,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-        2.8253996365426794,
-        41.984820821063515
+          2.8253996365426794,
+          41.984820821063515
         ]
       }
     },
@@ -253,17 +253,17 @@
       "properties": {
         "id": "14",
         "name": "El Cul de la Lleona",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
+        "url": "https://www.lalleonaxcatmandu.es/",
+        "img": "assets/cullleona.jpg",
+        "direccio": "Carrer dels Calderers, 8",
+        "telf": "623 554 994",
+        "email": "no té email"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.823516,
-          41.987407
+          2.824213578871444,
+          41.987660163934635
         ]
       }
     },
@@ -271,18 +271,18 @@
       "type": "Feature",
       "properties": {
         "id": "15",
-        "name": "",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
+        "name": "La Poma",
+        "url": "https://www.lapomaeslapera.net/",
+        "img": "assets/lapoma.jpg",
+        "direccio": "Cort Reial 16",
+        "telf": "698 421 131",
+        "email": "restaurantlapomagirona@gmail.com"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.823516,
-          41.987407
+          2.8251786537360193,
+          41.98519207011818
         ]
       }
     },
@@ -290,18 +290,18 @@
       "type": "Feature",
       "properties": {
         "id": "16",
-        "name": "",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
+        "name": "La Probocadora",
+        "url": "https://www.laprobocadora.com/",
+        "img": "assets/laprobocadora.jpg",
+        "direccio": "Carrer de les Hortes, 7",
+        "telf": "972 17 30 97",
+        "email": "info@laprobocadora.com"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.823516,
-          41.987407
+          2.8228365095571757,
+          41.984636371510334
         ]
       }
     },
@@ -309,18 +309,18 @@
       "type": "Feature",
       "properties": {
         "id": "17",
-        "name": "",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
+        "name": "La Regolta",
+        "url": "http://laregolta.com/",
+        "img": "assets/laregolta.jpg",
+        "direccio": "Carrer de Santa Llúcia, 6,",
+        "telf": "872 26 22 65",
+        "email": "no té email"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.823516,
-          41.987407
+          2.826208834139901,
+          41.98899917147723
         ]
       }
     },
@@ -328,75 +328,18 @@
       "type": "Feature",
       "properties": {
         "id": "18",
-        "name": "",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
+        "name": "Blanc",
+        "url": "https://andilana.com/",
+        "img": "assets/Blanc.jpg",
+        "direccio": "c/del Nord 2",
+        "telf": "972 41 56 37",
+        "email": "no té email"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.823516,
-          41.987407
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "19",
-        "name": "",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.823516,
-          41.987407
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "20",
-        "name": "",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.823516,
-          41.987407
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "",
-        "name": "",
-        "url": "",
-        "img": "",
-        "direccio": "",
-        "telf": "",
-        "email": ""
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.823516,
-          41.987407
+          2.8228376788712173,
+          41.98492642076021
         ]
       }
     }
