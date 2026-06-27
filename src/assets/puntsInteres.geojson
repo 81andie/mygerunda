@@ -1,0 +1,166 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1",
+        "name": "La Força Vella",
+        "url": "sense url",
+        "direccio": "c/Força",
+        "telf": "sense telf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8252,
+          41.9864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2",
+        "name": "La Catedral",
+        "url": "https://catedraldegirona.cat/",
+        "direccio": "Plaça de la Catedral",
+        "telf": "972 427 189"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8258500365429233,
+          41.98745214450556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3",
+        "name": "Sant Pere Galligants",
+        "url": "https://patrimoni.gencat.cat/es/coleccion/monasterio-de-sant-pere-de-galligants",
+
+        "direccio": "Carrer de Santa Llúcia, 8",
+        "telf": "972 202 632"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.826576307707286,
+          41.98887748843566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4",
+        "name": "Banys Àrabs",
+        "url": "https://www.banysarabs.cat/",
+
+        "direccio": "Ferran el Catòlic, s/n",
+        "telf": "972 19 09 69"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.825781546064811,
+          41.988314889333815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "5",
+        "name": "Basílica de Sant Feliu",
+        "url": "https://catedraldegirona.cat/visita-cultural-basilica/",
+        
+        "direccio": "Pujada de Sant Feliu, 29",
+        "telf": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8240991541,
+          41.9831768779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6",
+        "name": "El Call Jueu",
+        "url": "sense web",
+        "img": "",
+        "direccio": "c/de la Força",
+        "telf": "sense telf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8214,
+          41.9876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7",
+        "name": "Vall y monestir de Sant Daniel",
+        "url": "https://santdaniel.com/",
+        "img": "",
+        "direccio": "C/de les Monges 2",
+        "telf": "638 97 72 56"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8336413365430366,
+          41.98869120846312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "8",
+        "name": "La Muralla",
+        "url": "sense url",
+        "img": "",
+        "direccio": "Passeig de la Muralla",
+        "telf": "sense telef"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8249,
+          41.9898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9",
+        "name": "Las cases del Oñar",
+        "url": "sense url",
+        "img": "",
+        "direccio": "sense direcció",
+        "telf": "sense telefon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         2.8249,
+         41.9856
+        ]
+      }
+    }
+
+  ]
+}
