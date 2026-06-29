@@ -6,7 +6,7 @@
       "properties": {
         "id": "1",
         "name": "Hotel Best Western Premier CMC Girona",
-        "url": "https://hotelcmcgirona.com/",
+        "url":"https://www.hotelcmcgirona.com/",
         "img": "CMC.jpg",
         "direccio": "Barcelona, 112.17003 Girona.",
         "telf": "972400500",
@@ -27,7 +27,7 @@
       "properties": {
         "id": "2",
         "name": "Hotel Carlemany",
-        "url": "www.hotelcarlemanygirona.com",
+        "url": "https://www.hotelcarlemanygirona.com",
         "img": "carlemany.jpg",
         "direccio": "Plaça de Miquel Santaló. 17002 Girona.",
         "telf": "972211212",
@@ -47,7 +47,7 @@
       "properties": {
         "id": "3",
         "name": "Hotel Casa Cacao - El Celler de Can Roca",
-        "url": "https://hotelcasacacao.com/",
+        "url": "https://www.hotelcasacacao.com/",
         "img": "casacacao.jpg",
         "direccio": "Carrer Ginesta, 2. 17002 Girona.",
         "telf": "972282828",
@@ -68,7 +68,7 @@
       "properties": {
         "id": "4",
         "name": "Hotel Ciutat de Girona",
-        "url": "www.hotelciutatdegirona.com/es",
+        "url": "https://www.hotelciutatdegirona.com/es",
         "img": "ciutatGirona.jpg",
         "direccio": "C/ Nord, 2. 17002 Girona.",
         "telf": "972483038",
@@ -88,7 +88,7 @@
       "properties": {
         "id": "5",
         "name": "Hotel Double Tree by Hilton",
-        "url": "www.girona.doubletreebyhilton.com",
+        "url": "https://www.girona.doubletreebyhilton.com",
         "img": "DoubleTreeHilton.jpg",
         "direccio": "Joan Pons, 1. 17001 Girona.",
         "telf": "972414600",
@@ -108,7 +108,7 @@
       "properties": {
         "id": "6",
         "name": "Hotel Gran Ultònia",
-        "url": "www.hotelsultoniagirona.com",
+        "url": "https://www.hotelsultoniagirona.com",
         "img": "ultonia5.jpg",
         "direccio": "Gran via Jaume I, 22. 17001 Girona.",
         "telf": "972203850",
@@ -129,7 +129,7 @@
         "id": "7",
         "name": "Hotel Històric ",
         "url": "www.hotelhistoric.com",
-        "img": "historic.jpg",
+        "img": "https://www.historic.jpg",
         "direccio": "C/ Bellmirall, 4 . 17004 Girona.",
         "telf": "972 223 583",
         "email": "info@hotelhistoric.com",
@@ -148,7 +148,7 @@
       "properties": {
         "id": "8",
         "name": "Hotel Museu Llegendes de Girona",
-        "url": "www.llegendeshotel.com",
+        "url": "https://www.llegendeshotel.com",
         "img": "llegendes.jpg",
         "direccio": "Portal de la Barca, 4. 17004 Girona",
         "telf": "972 220 905",
@@ -169,7 +169,7 @@
       "properties": {
         "id": "9",
         "name": "Hotel Nord 1901",
-        "url":"www.nord1901.com",
+        "url":"https://www.nord1901.com",
         "img": "nord.jpg",
         "direccio": "C/del Nord 7-9. 17007 Girona.",
         "telf": "972411522",
@@ -209,7 +209,7 @@
       "properties": {
         "id": "11",
         "name": "Hotel Palau Fugit",
-        "url": "https://palaufugit.com",
+        "url": "https://www.palaufugit.com",
         "img": "palaufugit.jpg",
         "direccio": "Carrer Bonaventura Carreras i Peralta, 4. 17004 Girona.",
         "telf": "872987362",
@@ -229,7 +229,7 @@
       "properties": {
         "id": "12",
         "name": "Hotel B&B Girona 3",
-        "url": "www.hotel-bb.es/es/",
+        "url": "https://www.hotel-bb.es/es/",
         "img": "bbGirona.jpg",
         "direccio": "Camí dels Carlins, 10. 17190 Salt.",
         "telf": "972439009",
@@ -249,7 +249,7 @@
       "properties": {
         "id": "13",
         "name": "Hotel Costabella",
-        "url": "www.hotelcostabella.com",
+        "url": "https://www.hotelcostabella.com",
         "img": "costabella.png",
         "direccio": "Avinguda de França, 61. 17007 Girona.",
         "telf": "972202524",
@@ -290,7 +290,7 @@
       "properties": {
         "id": "15",
         "name": "Hotel Ultònia",
-        "url": "www.hotelsultoniagirona.com",
+        "url": "https://www.hotelsultoniagirona.com",
         "img": "ultonia5.jpg",
         "direccio": "Gran Via Jaume I, 22 . 17001 Girona.",
         "telf": "972203850",
@@ -331,7 +331,7 @@
       "properties": {
         "id": "17",
         "name": "Hotel Europa",
-        "url": "www.hoteleuropagirona.com",
+        "url": "https://www.hoteleuropagirona.com",
         "img": "hotelEuropa.jpg",
         "direccio": "C/ Juli Garreta, 21. 17002 Girona.",
         "telf": "972 202 750",
@@ -351,7 +351,7 @@
       "properties": {
         "id": "18",
         "name": "Hotel Ibis Girona Costa Brava",
-        "url": "www.ibishotels.com",
+        "url": "https://www.ibishotels.com",
         "img": "hibisCostaBrava.jpg",
         "direccio": "C/ Francesc Ferrer, 16-18 . 17006 Girona",
         "telf": "972391538",
@@ -413,7 +413,7 @@
       "properties": {
         "id": "21",
         "name": "Hotel Bestprice Girona",
-        "url": "https://hotelesbestprice.com/",
+        "url": "https://www.hotelesbestprice.com/",
         "img": "bestPriceGirona.png",
         "direccio": "Carretera de Barcelona, 1. 17002 Girona.",
         "telf": "972 753 688",

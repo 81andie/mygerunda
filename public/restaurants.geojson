@@ -7,7 +7,7 @@
         "id": "1",
         "name": "La Vedette",
         "url": "https://www.lavedetterestaurant.com/la-vedette-girona/",
-        "img": "assets/vedette.jpg",
+        "img": "vedette.jpg",
         "direccio": "C. de la Barca 17",
         "telf": "972 20 41 58",
         "email": "lavedettecomandes@gmail.com"
@@ -25,8 +25,8 @@
       "properties": {
         "id": "2",
         "name": "Creperie Bretone",
-        "url": "https://creperiebretonne.com/",
-        "img": "assets/bretone.jpg",
+        "url": "https://www.creperiebretonne.com/",
+        "img": "bretone.jpg",
         "direccio": "Cort Reial, 14",
         "telf": "602 10 92 29 // 972 218 120",
         "email": "girona@creperiebretonne.com"
@@ -45,7 +45,7 @@
         "id": "3",
         "name": "Buffala",
         "url": "https://www.buffalapizza.eu/",
-        "img": "assets/buffala.jpg",
+        "img": "buffala.jpg",
         "direccio": "Carrer Nord 22,",
         "telf": "972 71 26 84",
         "email": "no té email"
@@ -63,8 +63,8 @@
       "properties": {
         "id": "4",
         "name": "Cocolino",
-        "url": "https://restaurantcocolino.cat/",
-        "img": "assets/cocolino.png",
+        "url": "https://www.restaurantcocolino.cat/",
+        "img": "cocolino.png",
         "direccio": "Carrer de Pedret, 56",
         "telf": "676 46 18 55 / 972 22 40 47",
         "email": "info@restaurantcocolino.cat"
@@ -83,7 +83,7 @@
         "id": "5",
         "name": "El Racó Girona. Pizzeria Mediterrània",
         "url": "https://www.elraco.com/",
-        "img": "assets/elracó.jpg",
+        "img": "elracó.jpg",
         "direccio": "Plaza de la Independencia",
         "telf": "972 29 64 95",
         "email": "no té email"
@@ -101,8 +101,8 @@
       "properties": {
         "id": "6",
         "name": "La Mafia se sienta a la mesa",
-        "url": "https://lafamigliarestaurantes.com/restaurantes/gerona/",
-        "img": "assets/lamafia.jpg",
+        "url": "https://www.lafamigliarestaurantes.com/restaurantes/gerona/",
+        "img": "lamafia.jpg",
         "direccio": "Carrer Figuerola, 24 17001 Girona",
         "telf": "972604728",
         "email": "girona@lamafia.es"
@@ -120,8 +120,8 @@
       "properties": {
         "id": "7",
         "name": "Casa Ramen",
-        "url": "https://casa-ramen-girona.es/",
-        "img": "assets/casaramen.jpg",
+        "url": "https://www.casa-ramen-girona.es/",
+        "img": "casaramen.jpg",
         "direccio": "Avenida de Sant Francesc,5",
         "telf": "698 20 09 11",
         "email": "no té email"
@@ -139,8 +139,8 @@
       "properties": {
         "id": "8",
         "name": "",
-        "url": "https://install.yxpublicidad.com/apple-sushi/",
-        "img": "assets/applesushi.jpg",
+        "url": "https://www.install.yxpublicidad.com/apple-sushi/",
+        "img": "applesushi.jpg",
         "direccio": "Avenida de Sant Francesc,4",
         "telf": "972 09 30 47",
         "email": "no té email"
@@ -158,8 +158,8 @@
       "properties": {
         "id": "9",
         "name": "Hiroshi Girona",
-        "url": "https://hiroshi.es/",
-        "img": "assets/hiroshi.jpg",
+        "url": "https://www.hiroshi.es/",
+        "img": "hiroshi.jpg",
         "direccio": "Pujada Creu de Palau, 19,",
         "telf": "872 21 96 93 / 69 75 75 009",
         "email": "info@hiroshi.es"
@@ -177,8 +177,8 @@
       "properties": {
         "id": "10",
         "name": "Koyo",
-        "url": "https://koyosushi.eu/",
-        "img": "assets/koyo.jpg",
+        "url": "https://www.koyosushi.eu/",
+        "img": "koyo.jpg",
         "direccio": "Joaquim Vayreda 4",
         "telf": "972 59 56 29",
         "email": "no té email"
@@ -196,8 +196,8 @@
       "properties": {
         "id": "11",
         "name": "TOFU",
-        "url": "https://tofu.cat/",
-        "img": "assets/tofu.jpg",
+        "url": "https://www.tofu.cat/",
+        "img": "tofu.jpg",
         "direccio": "Avinguda de Ramon Folch, 13",
         "telf": "972 232 323",
         "email": "info@tofu.cat"
@@ -216,7 +216,7 @@
         "id": "12",
         "name": "Udon",
         "url": "https://www.udon.com/ca/restaurant/udon-girona",
-        "img": "assets/udon.jpg",
+        "img": "udon.jpg",
         "direccio": "C/Santa Clara 47",
         "telf": "938526234",
         "email": "customercare@udon.es"
@@ -235,7 +235,7 @@
         "id": "13",
         "name": "Brots de Vi",
         "url": "https://www.brotsdevi.cat/brots-de-vi/",
-        "img": "assets/brotsVi.jpg",
+        "img": "brotsVi.jpg",
         "direccio": "C. Cort Reial, 1",
         "telf": "972 212 121",
         "email": "info@brotsdevi.cat"
@@ -254,7 +254,7 @@
         "id": "14",
         "name": "El Cul de la Lleona",
         "url": "https://www.lalleonaxcatmandu.es/",
-        "img": "assets/cullleona.jpg",
+        "img": "cullleona.jpg",
         "direccio": "Carrer dels Calderers, 8",
         "telf": "623 554 994",
         "email": "no té email"
@@ -273,7 +273,7 @@
         "id": "15",
         "name": "La Poma",
         "url": "https://www.lapomaeslapera.net/",
-        "img": "assets/lapoma.jpg",
+        "img": "lapoma.jpg",
         "direccio": "Cort Reial 16",
         "telf": "698 421 131",
         "email": "restaurantlapomagirona@gmail.com"
@@ -292,7 +292,7 @@
         "id": "16",
         "name": "La Probocadora",
         "url": "https://www.laprobocadora.com/",
-        "img": "assets/laprobocadora.jpg",
+        "img": "laprobocadora.jpg",
         "direccio": "Carrer de les Hortes, 7",
         "telf": "972 17 30 97",
         "email": "info@laprobocadora.com"
@@ -310,8 +310,8 @@
       "properties": {
         "id": "17",
         "name": "La Regolta",
-        "url": "http://laregolta.com/",
-        "img": "assets/laregolta.jpg",
+        "url": "https://www.laregolta.com/",
+        "img": "laregolta.jpg",
         "direccio": "Carrer de Santa Llúcia, 6,",
         "telf": "872 26 22 65",
         "email": "no té email"
@@ -329,8 +329,8 @@
       "properties": {
         "id": "18",
         "name": "Blanc",
-        "url": "https://andilana.com/",
-        "img": "assets/Blanc.jpg",
+        "url": "https://www.andilana.com/",
+        "img": "Blanc.jpg",
         "direccio": "c/del Nord 2",
         "telf": "972 41 56 37",
         "email": "no té email"

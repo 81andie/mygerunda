@@ -1,20 +1,20 @@
 
 
 
-<div id="map" class="map top-24 z-0 ">
+<div id="map" class="map top-20 fixed z-0 ">
 <div id="popup" class="ol-popup">
   <a id="popup-closer" class="ol-popup-closer">✖</a>
   <div id="popup-content"></div>
 </div>
 
     </div>
-    <div class="relative grid grid-cols-2 p-2 mt-24 w-full gap-2 md:flex  justify-center place-items-center ">
-<button class="bg-red-50/30 backdrop-blur-sm rounded-md text-red-500" (click)="cargarBtnHoteles()">Hotels</button>
-<button class="bg-red-50/30 backdrop-blur-sm rounded-md text-red-500 " >Pensions</button>
-<button class="bg-red-50/30 backdrop-blur-sm rounded-md text-red-500">Apartaments</button>
-<button class="bg-red-50/30 backdrop-blur-sm rounded-md text-red-500">Punts d'interés</button>
-<button class="bg-red-50/30 backdrop-blur-sm rounded-md text-red-500">Cafeteries</button>
-<button class="bg-red-50/30 backdrop-blur-sm rounded-md text-red-500">Restaurants</button>
+    <div class="relative grid grid-cols-2 p-2 mt-24 w-full gap-1  md:flex  justify-center place-items-center ">
+<button class="bg-red-50/30 backdrop-blur-sm rounded-md text-red-500 text-md" (click)="cargarBtnHoteles()">Hotels</button>
+<button class="bg-red-50/30 backdrop-blur-sm rounded-md text-red-500 text-md" (click)="cargarBtnPensiones()">Pensions</button>
+<button class="bg-red-50/30 backdrop-blur-sm rounded-md text-red-500 text-md" (click)="cargarBtnApartments()">Apartaments</button>
+<button class="bg-red-50/30 backdrop-blur-sm rounded-md text-red-500 text-md" >Punts d'interés</button>
+<button class="bg-red-50/30 backdrop-blur-sm rounded-md text-red-500 text-md" (click)="cargarBtnCafeteries()" >Cafeteries</button>
+<button class="bg-red-50/30 backdrop-blur-sm rounded-md text-red-500 text-md" (click)="cargarBtnRestaurants()">Restaurants</button>
     </div>
 
 

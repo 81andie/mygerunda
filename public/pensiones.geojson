@@ -6,8 +6,8 @@
       "properties": {
         "id": "1",
         "name": "Bells Oficis B&B",
-        "url": "www.bellsoficis.com",
-        "img": "assets/bellsoficis.jpg",
+        "url": "https://www.bellsoficis.com",
+        "img": "bellsoficis.jpg",
         "direccio": "Germans Busquets, 2, 2on (Rambla Llibertat). 17004 Girona.",
         "telf": "679460457",
         "email": "info@bellsoficis.com"
@@ -27,8 +27,8 @@
       "properties": {
         "id": "2",
         "name": "Pensió Ibis Budget Girona Costa Brava",
-        "url": "www.accorhotels.com/es/hotel-6815-ibis-budget-girona-costa-brava/index.shtml",
-        "img": "assets/ibisbudget.jpg",
+        "url": "https://www.accorhotels.com/es/hotel-6815-ibis-budget-girona-costa-brava/index.shtml",
+        "img": "ibisbudget.jpg",
         "direccio": "C/ Francesc Ferrer, 16-18 . 17006 Girona.",
         "telf": "972 110 846",
         "email": "h6815@accor.com"
@@ -48,8 +48,8 @@
       "properties": {
         "id": "3",
         "name": "Pensió Viladomat",
-        "url": "www.pensioviladomat.cat",
-        "img": "assets/viladomat.jpg",
+        "url": "https://www.pensioviladomat.cat",
+        "img": "viladomat.jpg",
         "direccio": "C/ Ciutadans, 5 . 17004 Girona.",
         "telf": "972 203 176",
         "email": "info@pensioviladomat.com"
@@ -68,8 +68,8 @@
       "properties": {
         "id": "3",
         "name": "Alhambra",
-        "url": "hostel-alhambra-girona.com/",
-        "img": "assets/alhambra.jpg",
+        "url": "https://www.hostel-alhambra-girona.com/",
+        "img": "alhambra.jpg",
         "direccio": "Bassegoda, 18. 17006 Girona.",
         "telf": "649 945 131",
         "email": "nfo@hostel-alhambra-girona.com"
@@ -88,8 +88,8 @@
       "properties": {
         "id": "4",
         "name": "Bed & Breakfast 10 Girona",
-        "url": "bedandbreakfastgirona.com/",
-        "img": "assets/breakfast10.jpg",
+        "url": "https://www.bedandbreakfastgirona.com/",
+        "img": "breakfast10.jpg",
         "direccio": "C/ Saragossa, 10. 17003 Girona.",
         "telf": "972 665 637",
         "email": "h10girona@gmail.com"
@@ -108,8 +108,8 @@
       "properties": {
         "id": "5",
         "name": "Bellmirall Pensió",
-        "url": "www.bellmirall.cat",
-        "img": "assets/bellmirall1.jpg",
+        "url": "https://www.bellmirall.cat",
+        "img": "bellmirall1.jpg",
         "direccio": "C/ Bellmirall, 3. 17004 Girona.",
         "telf": "972 204 009",
         "email": "reserves@bellmirall.cat"
@@ -129,8 +129,8 @@
       "properties": {
         "id": "6",
         "name": "Casa Cúndaro",
-        "url": "www.casacundaro.com",
-        "img": "assets/cundaro.jpg",
+        "url": "https://www.casacundaro.com",
+        "img": "cundaro.jpg",
         "direccio": "Pujada de la Catedral, 7. 17004 Girona.",
         "telf": "972 223 583",
         "email": "info@casacundaro.com"
@@ -151,7 +151,7 @@
         "id": "6",
         "name": "El Porxo B&B",
         "url": "https://www.elporxobb.com",
-        "img": "assets/elporxo.jpg",
+        "img": "elporxo.jpg",
         "direccio": "Pujada de la Creu de Palau, 54. 17003 Girona.",
         "telf": "+34 655 497 031",
         "email": "reservations@elporxobb.com"
@@ -170,8 +170,8 @@
       "properties": {
         "id": "7",
         "name": "Hostal Milana",
-        "url": "https://milanagirona.com",
-        "img": "assets/milana.jpg",
+        "url": "https://www.milanagirona.com",
+        "img": "milana.jpg",
         "direccio": "Plaça de Sant Pere, 8. 17007 Girona.",
         "telf": "625 049 142",
         "email": "info@milanagirona.com"
@@ -192,7 +192,7 @@
         "id": "8",
         "name": "La 19",
         "url": "https://www.la19girona.com/",
-        "img": "assets/la19.jpg",
+        "img": "la19.jpg",
         "direccio": "Carrer mare de Déu del Mont, 19. 17005 Girona",
         "telf": "693 005 090",
         "email": "la19girona@gmail.com"
@@ -212,8 +212,8 @@
       "properties": {
         "id": "9",
         "name": "Montjuïc B&B",
-        "url": "www.montjuicbb.com",
-        "img": "assets/monjuic.jpg",
+        "url": "https://www.montjuicbb.com",
+        "img": "monjuic.jpg",
         "direccio": "C/ Onze de setembre 1. 17007 Girona.",
         "telf": "(+34) 972 427 771 / (+34) 606 998 955",
         "email": "reserva@montjuicbb.com"
@@ -232,8 +232,8 @@
       "properties": {
         "id": "10",
         "name": "Pensió Borràs",
-        "url": "https://pensionborras.com",
-        "img": "assets/borras.jpg",
+        "url": "https://www.pensionborras.com",
+        "img": "borras.jpg",
         "direccio": "Travessia Auriga, 6. Girona.",
         "telf": "656 891 029",
         "email": "recepcion@pensionborras.com"
