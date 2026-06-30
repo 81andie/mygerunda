@@ -17,6 +17,7 @@ import Overlay from 'ol/Overlay';
 import { PernotacionesGeoService} from '../../../services/PernoctacionesGeo.service';
 import { HotelGeometry } from '../../../interfaces/hotels.interface';
 import { HosteleriaGeoService } from '../../../services/HosteleriaGeo.service';
+import { PuntsInteresGeoService } from '../../../services/PuntsInteresGeo.service';
 
 
 
@@ -30,6 +31,7 @@ export class MapComponent implements OnInit {
 
   private HotelsGeoService = inject(PernotacionesGeoService)
   private CafeteriesGeoService = inject(HosteleriaGeoService)
+  private PuntsInteresService = inject(PuntsInteresGeoService)
   private markers: HotelGeometry[] = []
   private activeLayers: VectorLayer[] = [];
 
@@ -239,6 +241,18 @@ export class MapComponent implements OnInit {
     });
 
   }
+
+
+     cargarBtnPuntsInteres(){
+
+     this.clearLayers(); // opcional
+
+    this.PuntsInteresService.getLocalizationPuntsInteres().subscribe(data => {
+      this.addGeoLayer(data, 'marker.svg');
+    });
+
+  }
+
 
 
 

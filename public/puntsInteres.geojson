@@ -7,6 +7,7 @@
         "id": "1",
         "name": "La Força Vella",
         "url": "sense url",
+        "img": "laforca.jpg",
         "direccio": "c/Força",
         "telf": "sense telf"
       },
@@ -23,7 +24,8 @@
       "properties": {
         "id": "2",
         "name": "La Catedral",
-        "url": "https://catedraldegirona.cat/",
+        "url": "https://www.catedraldegirona.cat/",
+        "img": "catedral.jpg",
         "direccio": "Plaça de la Catedral",
         "telf": "972 427 189"
       },
@@ -40,8 +42,8 @@
       "properties": {
         "id": "3",
         "name": "Sant Pere Galligants",
-        "url": "https://patrimoni.gencat.cat/es/coleccion/monasterio-de-sant-pere-de-galligants",
-
+        "url": "https://www.patrimoni.gencat.cat/es/coleccion/monasterio-de-sant-pere-de-galligants",
+        "img": "stperegalligants.jpg",
         "direccio": "Carrer de Santa Llúcia, 8",
         "telf": "972 202 632"
       },
@@ -59,7 +61,7 @@
         "id": "4",
         "name": "Banys Àrabs",
         "url": "https://www.banysarabs.cat/",
-
+        "img": "banys.jpg",
         "direccio": "Ferran el Catòlic, s/n",
         "telf": "972 19 09 69"
       },
@@ -76,10 +78,10 @@
       "properties": {
         "id": "5",
         "name": "Basílica de Sant Feliu",
-        "url": "https://catedraldegirona.cat/visita-cultural-basilica/",
-        
+        "url": "https://www.catedraldegirona.cat/visita-cultural-basilica/",
+        "img": "stfeliu.jpg",
         "direccio": "Pujada de Sant Feliu, 29",
-        "telf": ""
+        "telf": "972201407"
       },
       "geometry": {
         "type": "Point",
@@ -95,7 +97,7 @@
         "id": "6",
         "name": "El Call Jueu",
         "url": "sense web",
-        "img": "",
+        "img": "elcall.jpg",
         "direccio": "c/de la Força",
         "telf": "sense telf"
       },
@@ -112,8 +114,8 @@
       "properties": {
         "id": "7",
         "name": "Vall y monestir de Sant Daniel",
-        "url": "https://santdaniel.com/",
-        "img": "",
+        "url": "https://www.santdaniel.com/",
+        "img": "stdaniel.jpg",
         "direccio": "C/de les Monges 2",
         "telf": "638 97 72 56"
       },
@@ -131,7 +133,7 @@
         "id": "8",
         "name": "La Muralla",
         "url": "sense url",
-        "img": "",
+        "img": "lamuralla.jpg",
         "direccio": "Passeig de la Muralla",
         "telf": "sense telef"
       },
@@ -156,11 +158,10 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-         2.8249,
-         41.9856
+          2.8249,
+          41.9856
         ]
       }
     }
-
   ]
 }

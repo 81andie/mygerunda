@@ -12,7 +12,7 @@ export class PernotacionesGeoService {
 
   private geoLocalizeHotels = 'hotels.geojson';
   private geoLocalizePensiones = 'pensiones.geojson';
-   private geoLocalizeApartments = 'apartaments.geojson';
+  private geoLocalizeApartments = 'apartaments.geojson';
 
   getLocalizationHotels(): Observable<HotelsGeoJson> {
     return this.http.get<HotelsGeoJson>(this.geoLocalizeHotels)
