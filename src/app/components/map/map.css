@@ -1,13 +1,13 @@
 .map {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  
 }
 
 button{
   padding: 12px;
   cursor: pointer;
-  
+
 }
 
 .ol-popup {

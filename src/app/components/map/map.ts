@@ -61,7 +61,7 @@ export class MapComponent implements OnInit {
       target: 'map',
       view: new View({
         center: fromLonLat([2.821, 41.987]),
-        zoom: 16,
+        zoom: 15,
       }),
     });
 
