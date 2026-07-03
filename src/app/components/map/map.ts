@@ -1,4 +1,9 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { AfterViewInit, Component, inject, OnInit, ChangeDetectorRef} from '@angular/core';
+
+
+
+import Fill from 'ol/style/Fill';
+import Stroke from 'ol/style/Stroke';
 
 import Style from 'ol/style/Style';
 import OverviewMap from 'ol/control/OverviewMap.js';
@@ -14,27 +19,35 @@ import { Icon } from 'ol/style';
 import VectorSource from 'ol/source/Vector';
 import VectorLayer from 'ol/layer/Vector';
 import Overlay from 'ol/Overlay';
-import { PernotacionesGeoService} from '../../../services/PernoctacionesGeo.service';
-import { HotelGeometry } from '../../../interfaces/hotels.interface';
+import { PernotacionesGeoService } from '../../../services/PernoctacionesGeo.service';
+import { HotelGeometry, HotelProperties } from '../../../interfaces/hotels.interface';
 import { HosteleriaGeoService } from '../../../services/HosteleriaGeo.service';
 import { PuntsInteresGeoService } from '../../../services/PuntsInteresGeo.service';
+import CircleStyle from 'ol/style/Circle';
+import { CommonModule } from '@angular/common';
+
 
 
 
 @Component({
   selector: 'app-map',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './map.html',
   styleUrl: './map.css',
 })
-export class MapComponent implements OnInit {
+export class MapComponent implements  AfterViewInit, OnInit {
+
+
 
   private HotelsGeoService = inject(PernotacionesGeoService)
   private CafeteriesGeoService = inject(HosteleriaGeoService)
   private PuntsInteresService = inject(PuntsInteresGeoService)
   private markers: HotelGeometry[] = []
   private activeLayers: VectorLayer[] = [];
+  private lastFeature?: Feature;
+  private cdr = inject(ChangeDetectorRef);
 
+  public hotels:any ={};
   private source = new OSM();
   private overviewMapControl = new OverviewMap({
     layers: [
@@ -50,7 +63,9 @@ export class MapComponent implements OnInit {
   private map: Map | null = null;
 
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
+
+
     this.map = new Map({
       controls: defaultControls().extend([this.overviewMapControl]),
       layers: [
@@ -65,7 +80,20 @@ export class MapComponent implements OnInit {
       }),
     });
 
+
+
+
   }
+
+
+  ngOnInit(): void {
+
+
+
+this.pruebaMostrarHotelAleatorio()
+
+  }
+
 
 
 
@@ -78,7 +106,7 @@ export class MapComponent implements OnInit {
   }
 
 
-  private addGeoLayer(data: any, iconUrl: string) {
+  private addGeoLayer(data: any) {
 
     const features = data.features.map((item: any) => {
 
@@ -96,9 +124,20 @@ export class MapComponent implements OnInit {
 
       feature.setStyle(new Style({
 
-        image: new Icon({
-          src: iconUrl,
-          scale: 0.7
+        image: new CircleStyle({
+          radius: 6,
+
+          fill: new Fill({
+            color: '#F54927',
+          }),
+          stroke: new Stroke({
+            color: '#F54927',
+            width: 2,
+
+          }),
+
+
+
         }),
 
       }));
@@ -136,17 +175,70 @@ export class MapComponent implements OnInit {
     }
 
     this.map?.on('click', (evt) => {
-      const feature = this.map?.forEachFeatureAtPixel(
-        evt.pixel,
-        (feature) => feature
+      const feature = this.map?.forEachFeatureAtPixel(evt.pixel, (feature) => feature as Feature,
+
       );
+
+
+      /*if(feature){
+      feature.setStyle(new Style({
+
+        image: new Icon({
+          src: "marker.svg",
+          scale: 0.7
+        }),
+
+      }));*/
+
+      if (this.lastFeature) {
+        this.lastFeature.setStyle(new Style({
+
+          image: new CircleStyle({
+            radius: 6,
+
+            fill: new Fill({
+              color: '#F54927',
+            }),
+            stroke: new Stroke({
+              color: '#F54927',
+              width: 2,
+
+            }),
+
+
+
+          })
+        })
+        )
+        this.lastFeature = undefined;
+      }
+
+      if (feature) {
+        feature.setStyle(new Style({
+
+          image: new Icon({
+            src: "marker.svg",
+            scale: 0.7
+          }),
+
+        }));
+        this.lastFeature = feature;
+      }
+
+
+
+
+
 
       disposePopover();
       if (feature) {
         const coordinates = (feature.getGeometry() as Point).getCoordinates()
 
 
-       // console.log(feature?.get('name'))
+
+
+        console.log(feature)
+        // console.log(feature?.get('name'))
         console.log(feature?.get('url'))
 
         element.innerHTML = `
@@ -193,63 +285,99 @@ export class MapComponent implements OnInit {
         popup.setPosition(undefined);
       }
     })
+
+
   }
 
   cargarBtnHoteles() {
     this.clearLayers(); // opcional
 
     this.HotelsGeoService.getLocalizationHotels().subscribe(data => {
-      this.addGeoLayer(data, 'marker.svg');
+      this.addGeoLayer(data);
     });
   }
 
 
-    cargarBtnPensiones() {
+  cargarBtnPensiones() {
     this.clearLayers(); // opcional
 
     this.HotelsGeoService.getLocalizationPensiones().subscribe(data => {
-      this.addGeoLayer(data, 'marker.svg');
+      this.addGeoLayer(data);
     });
   }
 
 
-   cargarBtnApartments() {
+  cargarBtnApartments() {
     this.clearLayers(); // opcional
 
     this.HotelsGeoService.getLocalizationApartments().subscribe(data => {
-      this.addGeoLayer(data, 'marker.svg');
+      this.addGeoLayer(data);
     });
   }
 
-  cargarBtnCafeteries(){
+  cargarBtnCafeteries() {
 
-     this.clearLayers(); // opcional
+    this.clearLayers(); // opcional
 
     this.CafeteriesGeoService.getLocalizationCafeteries().subscribe(data => {
-      this.addGeoLayer(data, 'marker.svg');
+      this.addGeoLayer(data);
     });
 
   }
 
 
-   cargarBtnRestaurants(){
+  cargarBtnRestaurants() {
 
-     this.clearLayers(); // opcional
+    this.clearLayers(); // opcional
 
     this.CafeteriesGeoService.getLocalizationRestaurants().subscribe(data => {
-      this.addGeoLayer(data, 'marker.svg');
+      this.addGeoLayer(data);
     });
 
   }
 
 
-     cargarBtnPuntsInteres(){
+  cargarBtnPuntsInteres() {
 
-     this.clearLayers(); // opcional
+    this.clearLayers(); // opcional
 
     this.PuntsInteresService.getLocalizationPuntsInteres().subscribe(data => {
-      this.addGeoLayer(data, 'marker.svg');
+      this.addGeoLayer(data);
     });
+
+  }
+
+
+
+  pruebaMostrarHotelAleatorio() {
+
+    this.HotelsGeoService.getLocalizationHotels().subscribe(data => {
+
+      const hoteles = data.features
+
+      //  console.log(hoteles.length)
+
+      const hoy = new Date();
+
+      const semilla = hoy.getFullYear() * 1000 + hoy.getMonth() * 100 + hoy.getDate();
+
+      let prueba = semilla % hoteles.length;
+      console.log(prueba)
+
+      // let hotelAleatorio = Math.floor(Math.random() * hoteles.length);
+      let hotelString = prueba.toString()
+
+
+      hoteles.forEach((item) => {
+        //  console.log(hotelString)
+        if (item.properties.id === hotelString) {
+          this.hotels= item.properties
+    this.cdr.detectChanges();
+        }
+      })
+   console.log('HOTEL:', this.hotels);
+    })
+
 
   }
 
@@ -258,12 +386,6 @@ export class MapComponent implements OnInit {
 
 
 }
-
-
-
-
-
-
 
 
 
