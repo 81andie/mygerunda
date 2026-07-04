@@ -29,6 +29,8 @@ import { CommonModule } from '@angular/common';
 
 
 
+
+
 @Component({
   selector: 'app-map',
   imports: [CommonModule],
@@ -46,6 +48,8 @@ export class MapComponent implements  AfterViewInit, OnInit {
   private activeLayers: VectorLayer[] = [];
   private lastFeature?: Feature;
   private cdr = inject(ChangeDetectorRef);
+
+    public isSidebarVisible: boolean = false;
 
   public hotels:any ={};
   private source = new OSM();
@@ -372,7 +376,8 @@ this.pruebaMostrarHotelAleatorio()
         //  console.log(hotelString)
         if (item.properties.id === hotelString) {
           this.hotels= item.properties
-    this.cdr.detectChanges();
+         this.cdr.detectChanges();
+
         }
       })
    console.log('HOTEL:', this.hotels);
@@ -381,7 +386,10 @@ this.pruebaMostrarHotelAleatorio()
 
   }
 
-
+ toggleSidebar(): void {
+    this.isSidebarVisible = !this.isSidebarVisible;
+    console.log("hola")
+  }
 
 
 

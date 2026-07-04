@@ -19,9 +19,18 @@
 
 
 @if (hotels) {
-  <div class="relative bottom-0 left-4 z-50 bg-white">
-    <p>Hotel Random</p>
-    <p>{{ hotels?.name }}</p>
+  <div class="relative bottom-0 left-4 z-50 w-2xs bg-red-100 p-2 rounded-md" [ngClass]="{'open': isSidebarVisible}" >
+    <div class="w-full">
+      <div class="flex w-full justify-between gap-2 ">
+ <span>L'hotel d'avui</span>
+       <button class=" bg-red-700 text-white text-center h-10 mr-2 mt-2 rounded-md" (click)="toggleSidebar()" >X</button>
+      </div>
+
+    </div>
+
+    <p class="text-2xl">{{ hotels?.name }}</p>
+    <img [src]=hotels?.img>
+
   </div>
 }
 
