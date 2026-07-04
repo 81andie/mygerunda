@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, inject, OnInit, ChangeDetectorRef} from '@angular/core';
-
+import { CommonModule } from '@angular/common';
 
 
 import Fill from 'ol/style/Fill';
@@ -24,16 +24,14 @@ import { HotelGeometry, HotelProperties } from '../../../interfaces/hotels.inter
 import { HosteleriaGeoService } from '../../../services/HosteleriaGeo.service';
 import { PuntsInteresGeoService } from '../../../services/PuntsInteresGeo.service';
 import CircleStyle from 'ol/style/Circle';
-import { CommonModule } from '@angular/common';
-
-
+import { NavbarMap } from "../navbar-map/navbar-map";
 
 
 
 
 @Component({
   selector: 'app-map',
-  imports: [CommonModule],
+  imports: [CommonModule, NavbarMap],
   templateUrl: './map.html',
   styleUrl: './map.css',
 })
@@ -49,10 +47,11 @@ export class MapComponent implements  AfterViewInit, OnInit {
   private lastFeature?: Feature;
   private cdr = inject(ChangeDetectorRef);
 
-    public isSidebarVisible: boolean = false;
+  public isSidebarVisible: boolean = false;
 
   public hotels:any ={};
   private source = new OSM();
+
   private overviewMapControl = new OverviewMap({
     layers: [
       new TileLayer({
@@ -129,14 +128,14 @@ this.pruebaMostrarHotelAleatorio()
       feature.setStyle(new Style({
 
         image: new CircleStyle({
-          radius: 6,
+          radius: 7,
 
           fill: new Fill({
             color: '#F54927',
           }),
           stroke: new Stroke({
             color: '#F54927',
-            width: 2,
+            width: 3,
 
           }),
 
