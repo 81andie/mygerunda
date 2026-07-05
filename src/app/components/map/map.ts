@@ -1,9 +1,11 @@
-import { AfterViewInit, Component, inject, OnInit, ChangeDetectorRef} from '@angular/core';
+import { AfterViewInit, Component, inject, OnInit, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 
 import Fill from 'ol/style/Fill';
 import Stroke from 'ol/style/Stroke';
+
+import { signal } from '@angular/core';
 
 import Style from 'ol/style/Style';
 import OverviewMap from 'ol/control/OverviewMap.js';
@@ -25,31 +27,36 @@ import { HosteleriaGeoService } from '../../../services/HosteleriaGeo.service';
 import { PuntsInteresGeoService } from '../../../services/PuntsInteresGeo.service';
 import CircleStyle from 'ol/style/Circle';
 import { NavbarMap } from "../navbar-map/navbar-map";
+import { Drawer } from "../drawer/drawer";
+import { MapStateService } from '../../../services/MapState.service';
 
 
 
 
 @Component({
   selector: 'app-map',
-  imports: [CommonModule, NavbarMap],
+  imports: [CommonModule, NavbarMap, Drawer],
   templateUrl: './map.html',
   styleUrl: './map.css',
 })
-export class MapComponent implements  AfterViewInit, OnInit {
+export class MapComponent implements AfterViewInit, OnInit {
 
 
 
   private HotelsGeoService = inject(PernotacionesGeoService)
   private CafeteriesGeoService = inject(HosteleriaGeoService)
   private PuntsInteresService = inject(PuntsInteresGeoService)
+  public MapState = inject(MapStateService)
   private markers: HotelGeometry[] = []
   private activeLayers: VectorLayer[] = [];
   private lastFeature?: Feature;
   private cdr = inject(ChangeDetectorRef);
 
+  selectedFeature = signal<Feature | null>(null);
+
   public isSidebarVisible: boolean = false;
 
-  public hotels:any ={};
+  public hotels: any = {};
   private source = new OSM();
 
   private overviewMapControl = new OverviewMap({
@@ -93,7 +100,7 @@ export class MapComponent implements  AfterViewInit, OnInit {
 
 
 
-this.pruebaMostrarHotelAleatorio()
+    this.pruebaMostrarHotelAleatorio()
 
   }
 
@@ -121,8 +128,10 @@ this.pruebaMostrarHotelAleatorio()
       feature.setProperties({
         name: item.properties.name,
         image: item.properties.img,
+        email: item.properties.email,
         telf: item.properties.telf,
-        url: item.properties.url
+        url: item.properties.url,
+        direccio:item.properties.direccio
       });
 
       feature.setStyle(new Style({
@@ -217,6 +226,20 @@ this.pruebaMostrarHotelAleatorio()
       }
 
       if (feature) {
+
+        this.MapState.selectedPlace.set({
+          name: feature.get('name'),
+          image: feature.get('image'),
+          telf: feature.get('telf'),
+          url: feature.get('url'),
+          direccio: feature.get('direccio'),
+          email:feature.get('email')
+        });
+
+
+
+
+
         feature.setStyle(new Style({
 
           image: new Icon({
@@ -226,6 +249,8 @@ this.pruebaMostrarHotelAleatorio()
 
         }));
         this.lastFeature = feature;
+      }else{
+        this.MapState.selectedPlace.set(null)
       }
 
 
@@ -370,18 +395,18 @@ this.pruebaMostrarHotelAleatorio()
       hoteles.forEach((item) => {
         //  console.log(hotelString)
         if (item.properties.id === hotelString) {
-          this.hotels= item.properties
-         this.cdr.detectChanges();
+          this.hotels = item.properties
+          this.cdr.detectChanges();
 
         }
       })
-   console.log('HOTEL:', this.hotels);
+      console.log('HOTEL:', this.hotels);
     })
 
 
   }
 
- toggleSidebar(): void {
+  toggleSidebar(): void {
     this.isSidebarVisible = !this.isSidebarVisible;
     console.log("hola")
   }

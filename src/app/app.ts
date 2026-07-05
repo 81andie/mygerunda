@@ -3,13 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { initFlowbite } from 'flowbite';
 import { Inicio } from './components/inicio/inicio';
 
-import { Footer } from "./components/footer/footer";
-import { Navbar } from "./components/navbar/navbar";
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Footer, Navbar],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
