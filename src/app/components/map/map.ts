@@ -236,10 +236,6 @@ this.pruebaMostrarHotelAleatorio()
       disposePopover();
       if (feature) {
         const coordinates = (feature.getGeometry() as Point).getCoordinates()
-
-
-
-
         console.log(feature)
         // console.log(feature?.get('name'))
         console.log(feature?.get('url'))
