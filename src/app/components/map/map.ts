@@ -364,7 +364,7 @@ this.pruebaMostrarHotelAleatorio()
 
       const semilla = hoy.getFullYear() * 1000 + hoy.getMonth() * 100 + hoy.getDate();
 
-      let prueba = semilla % hoteles.length;
+      let prueba = semilla % hoteles.length + 1;
       console.log(prueba)
 
       // let hotelAleatorio = Math.floor(Math.random() * hoteles.length);
