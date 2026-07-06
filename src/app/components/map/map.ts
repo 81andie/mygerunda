@@ -71,6 +71,7 @@ export class MapComponent implements AfterViewInit, OnInit {
 
 
   private map: Map | null = null;
+  activeButton= '';
 
 
   ngAfterViewInit(): void {
@@ -101,6 +102,7 @@ export class MapComponent implements AfterViewInit, OnInit {
 
 
     this.pruebaMostrarHotelAleatorio()
+
 
   }
 
@@ -316,6 +318,7 @@ export class MapComponent implements AfterViewInit, OnInit {
 
   cargarBtnHoteles() {
     this.clearLayers(); // opcional
+     this.activeButton = 'hoteles';
 
     this.HotelsGeoService.getLocalizationHotels().subscribe(data => {
       this.addGeoLayer(data);
@@ -326,6 +329,8 @@ export class MapComponent implements AfterViewInit, OnInit {
   cargarBtnPensiones() {
     this.clearLayers(); // opcional
 
+    this.activeButton = 'pensiones';
+
     this.HotelsGeoService.getLocalizationPensiones().subscribe(data => {
       this.addGeoLayer(data);
     });
@@ -335,6 +340,8 @@ export class MapComponent implements AfterViewInit, OnInit {
   cargarBtnApartments() {
     this.clearLayers(); // opcional
 
+     this.activeButton = 'apartaments';
+
     this.HotelsGeoService.getLocalizationApartments().subscribe(data => {
       this.addGeoLayer(data);
     });
@@ -343,6 +350,8 @@ export class MapComponent implements AfterViewInit, OnInit {
   cargarBtnCafeteries() {
 
     this.clearLayers(); // opcional
+
+    this.activeButton = 'cafeteries';
 
     this.CafeteriesGeoService.getLocalizationCafeteries().subscribe(data => {
       this.addGeoLayer(data);
@@ -354,6 +363,7 @@ export class MapComponent implements AfterViewInit, OnInit {
   cargarBtnRestaurants() {
 
     this.clearLayers(); // opcional
+     this.activeButton = 'restaurants';
 
     this.CafeteriesGeoService.getLocalizationRestaurants().subscribe(data => {
       this.addGeoLayer(data);
@@ -365,6 +375,8 @@ export class MapComponent implements AfterViewInit, OnInit {
   cargarBtnPuntsInteres() {
 
     this.clearLayers(); // opcional
+
+    this.activeButton = 'puntsInteres';
 
     this.PuntsInteresService.getLocalizationPuntsInteres().subscribe(data => {
       this.addGeoLayer(data);
@@ -414,10 +426,9 @@ export class MapComponent implements AfterViewInit, OnInit {
 
 
 
+
+
 }
-
-
-
 
 
 
