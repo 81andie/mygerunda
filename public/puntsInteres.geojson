@@ -9,7 +9,8 @@
         "url": "sense url",
         "img": "laforca.jpg",
         "direccio": "c/Força",
-        "telf": "sense telf"
+        "telf": "sense telf",
+        "email": "sense email"
       },
       "geometry": {
         "type": "Point",
@@ -27,7 +28,8 @@
         "url": "https://www.catedraldegirona.cat/",
         "img": "catedral.jpg",
         "direccio": "Plaça de la Catedral",
-        "telf": "972 427 189"
+        "telf": "972 427 189",
+        "email": "sense email"
       },
       "geometry": {
         "type": "Point",
@@ -45,7 +47,8 @@
         "url": "https://www.patrimoni.gencat.cat/es/coleccion/monasterio-de-sant-pere-de-galligants",
         "img": "stperegalligants.jpg",
         "direccio": "Carrer de Santa Llúcia, 8",
-        "telf": "972 202 632"
+        "telf": "972 202 632",
+        "email": "sense email"
       },
       "geometry": {
         "type": "Point",
@@ -63,7 +66,8 @@
         "url": "https://www.banysarabs.cat/",
         "img": "banys.jpg",
         "direccio": "Ferran el Catòlic, s/n",
-        "telf": "972 19 09 69"
+        "telf": "972 19 09 69",
+        "email": "sense email"
       },
       "geometry": {
         "type": "Point",
@@ -81,7 +85,8 @@
         "url": "https://www.catedraldegirona.cat/visita-cultural-basilica/",
         "img": "stfeliu.jpg",
         "direccio": "Pujada de Sant Feliu, 29",
-        "telf": "972201407"
+        "telf": "972201407",
+        "email": "sense email"
       },
       "geometry": {
         "type": "Point",
@@ -99,7 +104,8 @@
         "url": "sense web",
         "img": "elcall.jpg",
         "direccio": "c/de la Força",
-        "telf": "sense telf"
+        "telf": "sense telf",
+        "email": "sense email"
       },
       "geometry": {
         "type": "Point",
@@ -117,7 +123,8 @@
         "url": "https://www.santdaniel.com/",
         "img": "stdaniel.jpg",
         "direccio": "C/de les Monges 2",
-        "telf": "638 97 72 56"
+        "telf": "638 97 72 56",
+        "email": "sense email"
       },
       "geometry": {
         "type": "Point",
@@ -135,7 +142,8 @@
         "url": "sense url",
         "img": "lamuralla.jpg",
         "direccio": "Passeig de la Muralla",
-        "telf": "sense telef"
+        "telf": "sense telef",
+        "email": "sense email"
       },
       "geometry": {
         "type": "Point",
@@ -153,7 +161,8 @@
         "url": "sense url",
         "img": "",
         "direccio": "sense direcció",
-        "telf": "sense telefon"
+        "telf": "sense telefon",
+        "email": "sense email"
       },
       "geometry": {
         "type": "Point",
