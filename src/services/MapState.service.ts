@@ -17,4 +17,5 @@ export class MapStateService {
 
  selectedPlace = signal<PlaceInfo | null>(null);
 
+
 }

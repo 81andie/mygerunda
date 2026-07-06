@@ -27,7 +27,7 @@ import { HosteleriaGeoService } from '../../../services/HosteleriaGeo.service';
 import { PuntsInteresGeoService } from '../../../services/PuntsInteresGeo.service';
 import CircleStyle from 'ol/style/Circle';
 import { NavbarMap } from "../navbar-map/navbar-map";
-import { Drawer } from "../drawer/drawer";
+import {  Drawers } from "../drawer/drawer";
 import { MapStateService } from '../../../services/MapState.service';
 
 
@@ -35,7 +35,7 @@ import { MapStateService } from '../../../services/MapState.service';
 
 @Component({
   selector: 'app-map',
-  imports: [CommonModule, NavbarMap, Drawer],
+  imports: [CommonModule, NavbarMap, Drawers],
   templateUrl: './map.html',
   styleUrl: './map.css',
 })
@@ -251,6 +251,7 @@ export class MapComponent implements AfterViewInit, OnInit {
         this.lastFeature = feature;
       }else{
         this.MapState.selectedPlace.set(null)
+
       }
 
 
