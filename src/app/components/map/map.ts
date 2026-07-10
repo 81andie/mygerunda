@@ -172,22 +172,7 @@ public isSidebarVisible: boolean = false;
     this.map?.addLayer(vectorLayer)
     this.activeLayers.push(vectorLayer);
 
-    const element = document.getElementById('popup')!;
 
-    const popup = new Overlay({
-      element: element,
-      positioning: 'bottom-center',
-      stopEvent: false,
-    });
-    this.map?.addOverlay(popup);
-
-    let popover: { dispose: () => void; } | undefined;
-    function disposePopover() {
-      if (popover) {
-        popover.dispose();
-        popover = undefined;
-      }
-    }
 
     this.map?.on('click', (evt) => {
       const feature = this.map?.forEachFeatureAtPixel(evt.pixel, (feature) => feature as Feature,
@@ -262,56 +247,7 @@ public isSidebarVisible: boolean = false;
 
 
 
-      disposePopover();
-      if (feature) {
-        const coordinates = (feature.getGeometry() as Point).getCoordinates()
-        console.log(feature)
-        // console.log(feature?.get('name'))
-        console.log(feature?.get('url'))
-
-        element.innerHTML = `
-           <div class="w-64 space-y-4 font-sans bg-stone-100 rounded-lg">
-
-           <!-- Label -->
-            <p class="text-xs uppercase tracking-widest text-stone-400">
-             Localización
-            </p>
-
-            <!-- Título -->
-          <h2 class="text-lg font-semibold text-black leading-tight">
-           ${feature?.get('name')}
-          </h2>
-
-          <!-- Imagen -->
-        <div class="overflow-hidden rounded-lg border border-white/10">
-          <img
-        src="${feature?.get('image')}"
-        class="w-full h-36 object-cover"
-        alt="
-        <strong>${feature?.get('name')}"
-      >
-        </div>
-
-        <h2 class="text-lg font-semibold text-black leading-tight">
-           ${feature?.get('telf')}
-          </h2>
-
-          <a href='${feature?.get('url')}'
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-2xs font-semibold text-black leading-tight">
-           ${feature?.get('url')}
-          </a>
-
-        </div>
-
-
-          `
-        popup.setPosition(coordinates);
-
-      } else {
-        popup.setPosition(undefined);
-      }
+      
     })
 
 
