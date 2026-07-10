@@ -69,17 +69,17 @@ class="bg-red-50/30 btn backdrop-blur-sm rounded-md text-red-500 lg:text-md text
 
 
 @if (mostRelevant) {
-  <div class="relative bottom-0 left-4 z-50 w-2xs bg-red-100 p-2 rounded-md" [ngClass]="{'hidden': isSidebarVisible}" >
+  <div class="relative bottom-0 left-4 z-50 w-2xs bg-red-100  rounded-md" [ngClass]="{'hidden': isSidebarVisible}" >
     <div class="w-full">
-      <div class="flex w-full justify-between gap-2 ">
+      <div class="flex w-full justify-between ">
  <span>Avui destaquem</span>
-       <button class=" bg-red-700 text-white text-center h-10 mr-2 mt-1 rounded-md" (click)="toggleSidebar()" >X</button>
+       <button class=" bg-red-700 text-white text-center h-10  rounded-md" (click)="toggleSidebar()" >X</button>
       </div>
 
     </div>
 
     <p class="text-2xl">{{ mostRelevant?.name }}</p>
-    <img [src]=mostRelevant?.img>
+    <img [src]=mostRelevant?.img />
 
   </div>
 }
