@@ -4,6 +4,7 @@ import { Component,effect, inject, Inject,AfterViewInit} from '@angular/core';
 import { MapStateService } from '../../../services/MapState.service';
 
 
+
 @Component({
   selector: 'app-drawer',
   imports: [CommonModule],
@@ -11,9 +12,6 @@ import { MapStateService } from '../../../services/MapState.service';
   styleUrl: './drawer.css',
 })
 export class Drawers  {
-
-
-
 
 
 mapState=inject(MapStateService)

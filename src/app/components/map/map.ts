@@ -47,6 +47,7 @@ export class MapComponent implements AfterViewInit, OnInit {
   private CafeteriesGeoService = inject(HosteleriaGeoService)
   private PuntsInteresService = inject(PuntsInteresGeoService)
   public MapState = inject(MapStateService)
+
   private markers: HotelGeometry[] = []
   private activeLayers: VectorLayer[] = [];
   private lastFeature?: Feature;
@@ -54,7 +55,7 @@ export class MapComponent implements AfterViewInit, OnInit {
 
   selectedFeature = signal<Feature | null>(null);
 
-  public isSidebarVisible: boolean = false;
+public isSidebarVisible: boolean = false;
 
   public hotels: any = {};
   private source = new OSM();
@@ -419,10 +420,13 @@ export class MapComponent implements AfterViewInit, OnInit {
 
   }
 
-  toggleSidebar(): void {
+
+
+    toggleSidebar(): void {
     this.isSidebarVisible = !this.isSidebarVisible;
     console.log("hola")
   }
+
 
 
 
