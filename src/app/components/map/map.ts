@@ -27,8 +27,9 @@ import { HosteleriaGeoService } from '../../../services/HosteleriaGeo.service';
 import { PuntsInteresGeoService } from '../../../services/PuntsInteresGeo.service';
 import CircleStyle from 'ol/style/Circle';
 import { NavbarMap } from "../navbar-map/navbar-map";
-import {  Drawers } from "../drawer/drawer";
+import { Drawers } from "../drawer/drawer";
 import { MapStateService } from '../../../services/MapState.service';
+import { forkJoin } from 'rxjs';
 
 
 
@@ -48,6 +49,9 @@ export class MapComponent implements AfterViewInit, OnInit {
   private PuntsInteresService = inject(PuntsInteresGeoService)
   public MapState = inject(MapStateService)
 
+  allPlaces: any[] = []
+
+
   private markers: HotelGeometry[] = []
   private activeLayers: VectorLayer[] = [];
   private lastFeature?: Feature;
@@ -55,9 +59,13 @@ export class MapComponent implements AfterViewInit, OnInit {
 
   selectedFeature = signal<Feature | null>(null);
 
-public isSidebarVisible: boolean = false;
+  public isSidebarVisible: boolean = false;
 
   public hotels: any = {};
+  public mostRelevant: any = {}
+
+
+
   private source = new OSM();
 
   private overviewMapControl = new OverviewMap({
@@ -72,7 +80,7 @@ public isSidebarVisible: boolean = false;
 
 
   private map: Map | null = null;
-  activeButton= '';
+  activeButton = '';
 
 
   ngAfterViewInit(): void {
@@ -101,8 +109,7 @@ public isSidebarVisible: boolean = false;
   ngOnInit(): void {
 
 
-
-    this.pruebaMostrarHotelAleatorio()
+    this.prueba()
 
 
   }
@@ -134,7 +141,7 @@ public isSidebarVisible: boolean = false;
         email: item.properties.email,
         telf: item.properties.telf,
         url: item.properties.url,
-        direccio:item.properties.direccio
+        direccio: item.properties.direccio
       });
 
       feature.setStyle(new Style({
@@ -221,7 +228,7 @@ public isSidebarVisible: boolean = false;
           telf: feature.get('telf'),
           url: feature.get('url'),
           direccio: feature.get('direccio'),
-          email:feature.get('email')
+          email: feature.get('email')
         });
 
 
@@ -232,12 +239,16 @@ public isSidebarVisible: boolean = false;
 
           image: new Icon({
             src: "marker.svg",
-            scale: 0.7
+            //size:[64,64],
+            scale: 0.7,
+            anchor: [0.5, 1],
+            anchorXUnits: 'fraction',
+            anchorYUnits: 'fraction'
           }),
 
         }));
         this.lastFeature = feature;
-      }else{
+      } else {
         this.MapState.selectedPlace.set(null)
 
       }
@@ -247,7 +258,7 @@ public isSidebarVisible: boolean = false;
 
 
 
-      
+
     })
 
 
@@ -255,10 +266,16 @@ public isSidebarVisible: boolean = false;
 
   cargarBtnHoteles() {
     this.clearLayers(); // opcional
-     this.activeButton = 'hoteles';
+    this.activeButton = 'hoteles';
 
     this.HotelsGeoService.getLocalizationHotels().subscribe(data => {
       this.addGeoLayer(data);
+
+
+
+
+
+
     });
   }
 
@@ -270,6 +287,13 @@ public isSidebarVisible: boolean = false;
 
     this.HotelsGeoService.getLocalizationPensiones().subscribe(data => {
       this.addGeoLayer(data);
+
+
+
+
+
+
+
     });
   }
 
@@ -277,7 +301,7 @@ public isSidebarVisible: boolean = false;
   cargarBtnApartments() {
     this.clearLayers(); // opcional
 
-     this.activeButton = 'apartaments';
+    this.activeButton = 'apartaments';
 
     this.HotelsGeoService.getLocalizationApartments().subscribe(data => {
       this.addGeoLayer(data);
@@ -300,7 +324,7 @@ public isSidebarVisible: boolean = false;
   cargarBtnRestaurants() {
 
     this.clearLayers(); // opcional
-     this.activeButton = 'restaurants';
+    this.activeButton = 'restaurants';
 
     this.CafeteriesGeoService.getLocalizationRestaurants().subscribe(data => {
       this.addGeoLayer(data);
@@ -317,6 +341,7 @@ public isSidebarVisible: boolean = false;
 
     this.PuntsInteresService.getLocalizationPuntsInteres().subscribe(data => {
       this.addGeoLayer(data);
+      console.log(data.features)
     });
 
   }
@@ -324,6 +349,8 @@ public isSidebarVisible: boolean = false;
 
 
   pruebaMostrarHotelAleatorio() {
+
+    console.log(this.allPlaces)
 
     this.HotelsGeoService.getLocalizationHotels().subscribe(data => {
 
@@ -358,18 +385,87 @@ public isSidebarVisible: boolean = false;
 
 
 
-    toggleSidebar(): void {
+  toggleSidebar(): void {
     this.isSidebarVisible = !this.isSidebarVisible;
     console.log("hola")
   }
 
+  onButtonClick(boton: string) {
+
+    switch (boton) {
+
+      case 'hoteles':
+        this.cargarBtnHoteles();
+        break;
+
+      case 'pensiones':
+        this.cargarBtnPensiones();
+        break;
+
+      case 'apartaments':
+        this.cargarBtnApartments();
+        break;
+
+      case 'restaurants':
+        this.cargarBtnRestaurants();
+        break;
+
+      case 'cafeteries':
+        this.cargarBtnCafeteries();
+        break;
+
+      case 'puntsInteres':
+        this.cargarBtnPuntsInteres();
+        break;
+
+    }
+
+  }
 
 
+  prueba() {
+
+    forkJoin({
+      hoteles: this.HotelsGeoService.getLocalizationHotels(),
+      pensiones: this.HotelsGeoService.getLocalizationPensiones(),
+      apartamentos: this.HotelsGeoService.getLocalizationApartments(),
+      cafeterias: this.CafeteriesGeoService.getLocalizationCafeteries(),
+      restaurantes: this.CafeteriesGeoService.getLocalizationRestaurants(),
+      punts: this.PuntsInteresService.getLocalizationPuntsInteres()
+    }).subscribe(result => {
+
+      this.allPlaces = [
+        ...result.hoteles.features,
+        ...result.pensiones.features,
+        ...result.apartamentos.features,
+        ...result.cafeterias.features,
+        ...result.restaurantes.features,
+        ...result.punts.features
+      ];
+
+
+      let allPlaces = this.allPlaces
+
+      const hoy = new Date();
+
+      const semilla = hoy.getFullYear() * 1000 + hoy.getMonth() * 100 + hoy.getDate();
+
+      let prueba = semilla % allPlaces.length;
+
+     this.mostRelevant = this.allPlaces[prueba].properties;
+  this.cdr.detectChanges();
+     console.log(this.mostRelevant)
+
+
+
+
+
+    });
+
+
+
+  }
 
 
 
 }
-
-
-
-
