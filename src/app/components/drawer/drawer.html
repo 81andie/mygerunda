@@ -1,6 +1,5 @@
 <div class="absolute w-full top-48 ">
    <button
-
    class="ml-2inline-flex items-center justify-center text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5" type="button" data-drawer-target="drawer-swipe" data-drawer-show="drawer-swipe" data-drawer-placement="bottom" data-drawer-edge="true" data-drawer-edge-offset="bottom-[60px]" aria-controls="drawer-swipe">
    Show
    </button>
@@ -10,11 +9,10 @@
 
 <div
 id="drawer-swipe"
+ [class.translate-y-full]="!mapState.selectedPlace()"
+  [class.translate-y-0]="mapState.selectedPlace()"
 
-
-class="fixed z-40 w-full overflow-y-auto bg-neutral-primary-soft border-t border-default rounded-t-base transition-transform bottom-0 translate-y-full left-0 right-0 bottom-[60px]"
-
-
+class="fixed z-40 w-full h-full overflow-y-auto bg-neutral-primary-soft border-t border-default rounded-t-base transition-transform bottom-0 translate-y-full left-0 right-0 bottom[60px]"
 tabindex="-1" aria-labelledby="drawer-swipe-label">
 
 
