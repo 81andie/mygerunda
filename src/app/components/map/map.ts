@@ -108,8 +108,8 @@ export class MapComponent implements AfterViewInit, OnInit {
 
   ngOnInit(): void {
 
-
     this.prueba()
+
 
 
   }
@@ -452,20 +452,15 @@ export class MapComponent implements AfterViewInit, OnInit {
 
       let prueba = semilla % allPlaces.length;
 
-     this.mostRelevant = this.allPlaces[prueba].properties;
-  this.cdr.detectChanges();
-     console.log(this.mostRelevant)
+      this.mostRelevant = this.allPlaces[prueba].properties;
+        this.cdr.detectChanges()
 
-
-
-
+      setTimeout(() => {
+        this.mostRelevant = null
+        this.cdr.detectChanges()
+      }, 10000)
 
     });
-
-
-
   }
-
-
 
 }
