@@ -83,6 +83,7 @@ export class MapComponent implements AfterViewInit, OnInit {
   activeButton = '';
 
 
+
   ngAfterViewInit(): void {
 
 
@@ -99,8 +100,6 @@ export class MapComponent implements AfterViewInit, OnInit {
         zoom: 15,
       }),
     });
-
-
 
 
   }
@@ -157,10 +156,11 @@ export class MapComponent implements AfterViewInit, OnInit {
             width: 3,
 
           }),
-
-
-
         }),
+
+
+
+
 
       }));
 
@@ -270,10 +270,6 @@ export class MapComponent implements AfterViewInit, OnInit {
 
     this.HotelsGeoService.getLocalizationHotels().subscribe(data => {
       this.addGeoLayer(data);
-
-
-
-
 
 
     });
@@ -453,7 +449,7 @@ export class MapComponent implements AfterViewInit, OnInit {
       let prueba = semilla % allPlaces.length;
 
       this.mostRelevant = this.allPlaces[prueba].properties;
-        this.cdr.detectChanges()
+      this.cdr.detectChanges()
 
       setTimeout(() => {
         this.mostRelevant = null
@@ -462,5 +458,11 @@ export class MapComponent implements AfterViewInit, OnInit {
 
     });
   }
+
+
+
+
+
+
 
 }

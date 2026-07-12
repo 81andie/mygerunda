@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, inject, Output } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { MapStateService } from '../../../services/MapState.service';
 
 @Component({
   selector: 'app-cards',
@@ -8,5 +9,16 @@ import { RouterModule } from '@angular/router';
   styleUrl: './cards.css',
 })
 export class Cards {
+
+
+
+
+
+
+  mapStateService = inject(MapStateService);
+
+
+
+
 
 }
