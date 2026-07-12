@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
+import { MapFilterService } from '../../../services/map-filter.service';
 
 @Component({
   selector: 'app-footer',
@@ -8,5 +9,16 @@ import { RouterModule } from '@angular/router';
   styleUrl: './footer.css',
 })
 export class Footer {
+
+  private router = inject(Router);
+  private mapFilter = inject(MapFilterService);
+
+  goToMap(filter: string) {
+
+    this.mapFilter.setFilter(filter);
+
+    this.router.navigate(['/map']);
+
+  }
 
 }

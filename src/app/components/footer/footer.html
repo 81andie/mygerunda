@@ -26,13 +26,19 @@
                   <h2 class="mb-6 text-sm font-semibold text-rose-300 uppercase">Troba el que busques</h2>
                   <ul class="text-body font-medium">
                       <li class="mb-4">
-                          <a href="/map" class="hover:underline ">Troba el teu restaurant</a>
+                          <p
+                          (click)="goToMap('restaurants')"
+                           class="hover:underline ">Troba el teu restaurant</p>
                       </li>
                       <li>
-                          <a href="/map" class="hover:underline">Troba el teu allotjament</a>
+                          <p
+                          (click)="goToMap('hoteles')"
+                          class="hover:underline">Troba el teu allotjament</p>
                       </li>
                       <li>
-                          <a href="/map" class="hover:underline">Que vols veure</a>
+                          <p
+                           (click)="goToMap('puntsInteres')"
+                           class="hover:underline">Que vols veure</p>
                       </li>
                   </ul>
               </div>
