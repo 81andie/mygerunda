@@ -18,6 +18,8 @@ export class MapStateService {
  selectedPlace = signal<PlaceInfo | null>(null);
  //selectedCategory = signal<string | null>(null);
 
+ 
+
 
 
 

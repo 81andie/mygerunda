@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 
-import { Component,effect, inject, Inject,afterNextRender} from '@angular/core';
+import { Component, effect, inject, Inject, AfterViewInit } from '@angular/core';
 import { MapStateService } from '../../../services/MapState.service';
 
 import { Drawer, DrawerInterface } from 'flowbite';
@@ -13,45 +13,56 @@ import { Drawer, DrawerInterface } from 'flowbite';
   templateUrl: './drawer.html',
   styleUrl: './drawer.css',
 })
-export class Drawers  {
+export class Drawers {
 
 
-mapState=inject(MapStateService)
+  mapState = inject(MapStateService)
 
 
- private drawer!: DrawerInterface;
+  private drawer!: DrawerInterface;
 
   constructor() {
+    console.log('DRAWER CREADO');
 
-    afterNextRender(() => {
+    effect(() => {
+      const place = this.mapState.selectedPlace();
 
-      const drawerElement = document.getElementById('drawer-swipe');
+      console.log('DRAWER EFFECT', place);
 
-      if (drawerElement) {
-        this.drawer = new Drawer(drawerElement, {
-          placement: 'bottom',
-          edge: true,
-          edgeOffset: 'bottom-[60px]'
-        });
+      if (place && this.drawer) {
+        this.drawer.show();
+      } else {
+        this.drawer.hide()
       }
-
-      effect(() => {
-
-        const place = this.mapState.selectedPlace();
-
-        if (place) {
-          this.drawer.show();
-        }
-
-      });
-
     });
+  }
 
+  ngAfterViewInit() {
+    const drawerElement = document.getElementById('drawer-swipe');
+
+    if (drawerElement) {
+      this.drawer = new Drawer(drawerElement, {
+        placement: 'bottom',
+        edge: true,
+        edgeOffset: 'bottom-[60px]'
+      });
+    }
+  }
+
+  toggleDrawer() {
+    if (this.mapState.selectedPlace()) {
+      this.drawer.hide();
+      this.mapState.selectedPlace.set(null);
+    }
   }
 
 
 
 }
+
+
+
+
 
 
 

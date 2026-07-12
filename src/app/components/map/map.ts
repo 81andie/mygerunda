@@ -1,5 +1,8 @@
-import { AfterViewInit, Component, inject, OnInit, ChangeDetectorRef } from '@angular/core';
+import { AfterViewInit, Component, inject, OnInit, ChangeDetectorRef, DestroyRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+
 
 
 import Fill from 'ol/style/Fill';
@@ -30,6 +33,7 @@ import { NavbarMap } from "../navbar-map/navbar-map";
 import { Drawers } from "../drawer/drawer";
 import { MapStateService } from '../../../services/MapState.service';
 import { forkJoin } from 'rxjs';
+import { MapFilterService } from '../../../services/map-filter.service';
 
 
 
@@ -48,14 +52,22 @@ export class MapComponent implements AfterViewInit, OnInit {
   private CafeteriesGeoService = inject(HosteleriaGeoService)
   private PuntsInteresService = inject(PuntsInteresGeoService)
   public MapState = inject(MapStateService)
+  public mapfilter = inject(MapFilterService)
 
   allPlaces: any[] = []
+
+  constructor() {
+    console.log('MAP COMPONENT CREADO');
+  }
 
 
   private markers: HotelGeometry[] = []
   private activeLayers: VectorLayer[] = [];
   private lastFeature?: Feature;
   private cdr = inject(ChangeDetectorRef);
+
+
+  private destroyRef = inject(DestroyRef);
 
   selectedFeature = signal<Feature | null>(null);
 
@@ -102,6 +114,103 @@ export class MapComponent implements AfterViewInit, OnInit {
     });
 
 
+    this.map?.on('click', (evt) => {
+      const feature = this.map?.forEachFeatureAtPixel(evt.pixel, (feature) => feature as Feature,
+
+      );
+
+
+      /*if(feature){
+      feature.setStyle(new Style({
+
+        image: new Icon({
+          src: "marker.svg",
+          scale: 0.7
+        }),
+
+      }));*/
+
+      if (this.lastFeature) {
+        this.lastFeature.setStyle(new Style({
+
+          image: new CircleStyle({
+            radius: 6,
+
+            fill: new Fill({
+              color: '#F54927',
+            }),
+            stroke: new Stroke({
+              color: '#F54927',
+              width: 2,
+
+            }),
+
+          })
+        })
+        )
+        this.lastFeature = undefined;
+      }
+
+      if (feature) {
+
+        const place = {
+          name: feature.get('name'),
+          image: feature.get('image'),
+          telf: feature.get('telf'),
+          url: feature.get('url'),
+          direccio: feature.get('direccio'),
+          email: feature.get('email')
+        };
+
+        console.log(place);
+
+        this.MapState.selectedPlace.set(place);
+
+
+        console.log('HE PULSADO UN MARKER');
+
+        this.MapState.selectedPlace.set({
+          name: feature.get('name'),
+          image: feature.get('image'),
+          telf: feature.get('telf'),
+          url: feature.get('url'),
+          direccio: feature.get('direccio'),
+          email: feature.get('email')
+        });
+
+        feature.setStyle(new Style({
+
+          image: new Icon({
+            src: "marker.svg",
+            //size:[64,64],
+            scale: 0.7,
+            anchor: [0.5, 1],
+            anchorXUnits: 'fraction',
+            anchorYUnits: 'fraction'
+          }),
+
+        }));
+        this.lastFeature = feature;
+      } else {
+        this.MapState.selectedPlace.set(null)
+
+      }
+
+    })
+
+
+    this.mapfilter.filter$
+
+      .pipe(takeUntilDestroyed(this.destroyRef))
+      .subscribe(filter => {
+
+        if (filter) {
+          this.onButtonClick(filter);
+        }
+
+      })
+
+
   }
 
 
@@ -109,11 +218,7 @@ export class MapComponent implements AfterViewInit, OnInit {
 
     this.prueba()
 
-
-
   }
-
-
 
 
   private clearLayers() {
@@ -179,87 +284,9 @@ export class MapComponent implements AfterViewInit, OnInit {
     this.map?.addLayer(vectorLayer)
     this.activeLayers.push(vectorLayer);
 
+    // a partir de aqui
 
 
-    this.map?.on('click', (evt) => {
-      const feature = this.map?.forEachFeatureAtPixel(evt.pixel, (feature) => feature as Feature,
-
-      );
-
-
-      /*if(feature){
-      feature.setStyle(new Style({
-
-        image: new Icon({
-          src: "marker.svg",
-          scale: 0.7
-        }),
-
-      }));*/
-
-      if (this.lastFeature) {
-        this.lastFeature.setStyle(new Style({
-
-          image: new CircleStyle({
-            radius: 6,
-
-            fill: new Fill({
-              color: '#F54927',
-            }),
-            stroke: new Stroke({
-              color: '#F54927',
-              width: 2,
-
-            }),
-
-
-
-          })
-        })
-        )
-        this.lastFeature = undefined;
-      }
-
-      if (feature) {
-
-        this.MapState.selectedPlace.set({
-          name: feature.get('name'),
-          image: feature.get('image'),
-          telf: feature.get('telf'),
-          url: feature.get('url'),
-          direccio: feature.get('direccio'),
-          email: feature.get('email')
-        });
-
-
-
-
-
-        feature.setStyle(new Style({
-
-          image: new Icon({
-            src: "marker.svg",
-            //size:[64,64],
-            scale: 0.7,
-            anchor: [0.5, 1],
-            anchorXUnits: 'fraction',
-            anchorYUnits: 'fraction'
-          }),
-
-        }));
-        this.lastFeature = feature;
-      } else {
-        this.MapState.selectedPlace.set(null)
-
-      }
-
-
-
-
-
-
-
-    })
 
 
   }
@@ -458,11 +485,6 @@ export class MapComponent implements AfterViewInit, OnInit {
 
     });
   }
-
-
-
-
-
 
 
 }
