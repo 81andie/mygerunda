@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --base-href /myGerunda/",
+    "build": "ng build --base-href /mygerunda/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
