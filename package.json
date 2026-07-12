@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-     "build": "ng build --base-href /myGerunda/",
+    "build": "ng build --base-href /myGerunda/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -41,6 +41,7 @@
     "@angular/cli": "^21.1.4",
     "@angular/compiler-cli": "^21.1.0",
     "@tailwindcss/postcss": "^4.1.12",
+    "angular-cli-ghpages": "^3.1.0",
     "jsdom": "^27.1.0",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.12",
