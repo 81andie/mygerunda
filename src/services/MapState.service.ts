@@ -16,7 +16,7 @@ export interface PlaceInfo {
 export class MapStateService {
 
  selectedPlace = signal<PlaceInfo | null>(null);
- selectedCategory = signal<string | null>(null);
+ //selectedCategory = signal<string | null>(null);
 
 
 
