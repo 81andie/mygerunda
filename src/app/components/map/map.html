@@ -5,7 +5,10 @@
 
 ></app-navbar-map>
 
+
+
 <div id="map" class="map h-screen absolute top-0 z-0 ">
+  <app-drawer></app-drawer>
 <div id="popup" class="ol-popup">
   <a id="popup-closer" class="ol-popup-closer">✖</a>
   <div id="popup-content"></div>
@@ -68,6 +71,9 @@ class="bg-red-50/30 btn backdrop-blur-sm rounded-md text-red-500 lg:text-md text
 </div>
 
 
+
+
+
 @if (mostRelevant) {
   <div class="relative bottom-0 left-4 z-50 w-2xs bg-red-100  rounded-md" [ngClass]="{'hidden': isSidebarVisible}" >
  <button class="absolute flex  justify-center -top-6  left-64 bg-red-700 text-white text-center h-10 w-10 rounded-full" (click)="toggleSidebar()" >X</button>
@@ -89,13 +95,17 @@ class="bg-red-50/30 btn backdrop-blur-sm rounded-md text-red-500 lg:text-md text
  <span class=" p-1 w-2s text-4xl">{{mostRelevant?.name}}</span>
 </div>
 
-
-
   </div>
+
+
 }
 
 
-<app-drawer></app-drawer>
+
+
+
+
+
 
 
 

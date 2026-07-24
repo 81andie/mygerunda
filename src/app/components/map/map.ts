@@ -30,7 +30,7 @@ import { HosteleriaGeoService } from '../../../services/HosteleriaGeo.service';
 import { PuntsInteresGeoService } from '../../../services/PuntsInteresGeo.service';
 import CircleStyle from 'ol/style/Circle';
 import { NavbarMap } from "../navbar-map/navbar-map";
-import { Drawers } from "../drawer/drawer";
+import { Drawers } from '../drawer/drawer';
 import { MapStateService } from '../../../services/MapState.service';
 import { forkJoin } from 'rxjs';
 import { MapFilterService } from '../../../services/map-filter.service';
@@ -103,7 +103,7 @@ export class MapComponent implements AfterViewInit, OnInit {
       controls: defaultControls().extend([this.overviewMapControl]),
       layers: [
         new TileLayer({
-          source: this.source,
+          source: new OSM(),
         }),
       ],
       target: 'map',
@@ -112,6 +112,105 @@ export class MapComponent implements AfterViewInit, OnInit {
         zoom: 15,
       }),
     });
+
+
+    setTimeout(() => {
+      this.map?.updateSize();
+    }, 0);
+
+
+
+
+
+
+    this.mapfilter.filter$
+
+      .pipe(takeUntilDestroyed(this.destroyRef))
+      .subscribe(filter => {
+
+        if (filter) {
+          this.onButtonClick(filter);
+        }
+
+      })
+
+
+
+
+  }
+
+
+  ngOnInit(): void {
+
+    this.prueba()
+
+  }
+
+
+  private clearLayers() {
+    this.activeLayers.forEach(layer => {
+      this.map?.removeLayer(layer);
+    });
+
+    this.activeLayers = [];
+  }
+
+
+  private addGeoLayer(data: any) {
+
+    const features = data.features.map((item: any) => {
+
+      const feature = new Feature({
+        geometry: new Point(fromLonLat([item.geometry.coordinates[0], item.geometry.coordinates[1]]))
+      })
+
+
+      feature.setProperties({
+        name: item.properties.name,
+        image: item.properties.img,
+        email: item.properties.email,
+        telf: item.properties.telf,
+        url: item.properties.url,
+        direccio: item.properties.direccio
+      });
+
+      feature.setStyle(new Style({
+
+        image: new CircleStyle({
+          radius: 7,
+
+          fill: new Fill({
+            color: '#F54927',
+          }),
+          stroke: new Stroke({
+            color: '#F54927',
+            width: 3,
+
+          }),
+        }),
+
+
+
+
+
+      }));
+
+      return feature
+
+    })
+
+    const vectorSource = new VectorSource({
+      features: features,
+    });
+
+    const vectorLayer = new VectorLayer({
+      source: vectorSource,
+    });
+
+    this.map?.addLayer(vectorLayer)
+    this.activeLayers.push(vectorLayer);
+
+    // a partir de aqui
 
 
     this.map?.on('click', (evt) => {
@@ -199,94 +298,6 @@ export class MapComponent implements AfterViewInit, OnInit {
     })
 
 
-    this.mapfilter.filter$
-
-      .pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe(filter => {
-
-        if (filter) {
-          this.onButtonClick(filter);
-        }
-
-      })
-
-
-  }
-
-
-  ngOnInit(): void {
-
-    this.prueba()
-
-  }
-
-
-  private clearLayers() {
-    this.activeLayers.forEach(layer => {
-      this.map?.removeLayer(layer);
-    });
-
-    this.activeLayers = [];
-  }
-
-
-  private addGeoLayer(data: any) {
-
-    const features = data.features.map((item: any) => {
-
-      const feature = new Feature({
-        geometry: new Point(fromLonLat([item.geometry.coordinates[0], item.geometry.coordinates[1]]))
-      })
-
-
-      feature.setProperties({
-        name: item.properties.name,
-        image: item.properties.img,
-        email: item.properties.email,
-        telf: item.properties.telf,
-        url: item.properties.url,
-        direccio: item.properties.direccio
-      });
-
-      feature.setStyle(new Style({
-
-        image: new CircleStyle({
-          radius: 7,
-
-          fill: new Fill({
-            color: '#F54927',
-          }),
-          stroke: new Stroke({
-            color: '#F54927',
-            width: 3,
-
-          }),
-        }),
-
-
-
-
-
-      }));
-
-      return feature
-
-    })
-
-    const vectorSource = new VectorSource({
-      features: features,
-    });
-
-    const vectorLayer = new VectorLayer({
-      source: vectorSource,
-    });
-
-    this.map?.addLayer(vectorLayer)
-    this.activeLayers.push(vectorLayer);
-
-    // a partir de aqui
-
-
 
 
   }
@@ -310,11 +321,6 @@ export class MapComponent implements AfterViewInit, OnInit {
 
     this.HotelsGeoService.getLocalizationPensiones().subscribe(data => {
       this.addGeoLayer(data);
-
-
-
-
-
 
 
     });
@@ -410,6 +416,7 @@ export class MapComponent implements AfterViewInit, OnInit {
 
   toggleSidebar(): void {
     this.isSidebarVisible = !this.isSidebarVisible;
+
     console.log("hola")
   }
 
@@ -446,6 +453,8 @@ export class MapComponent implements AfterViewInit, OnInit {
   }
 
 
+
+
   prueba() {
 
     forkJoin({
@@ -478,10 +487,17 @@ export class MapComponent implements AfterViewInit, OnInit {
       this.mostRelevant = this.allPlaces[prueba].properties;
       this.cdr.detectChanges()
 
+
+      setTimeout(() => {
+        this.map?.updateSize();
+      }, 0);
+
       setTimeout(() => {
         this.mostRelevant = null
-        this.cdr.detectChanges()
-      }, 10000)
+       // this.cdr.detectChanges()
+      }, 3000)
+
+
 
     });
   }

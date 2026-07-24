@@ -25,11 +25,12 @@ export class Drawers {
     console.log('DRAWER CREADO');
 
     effect(() => {
+
       const place = this.mapState.selectedPlace();
+      if (!this.drawer) return;
+      // console.log('DRAWER EFFECT', place);
 
-      console.log('DRAWER EFFECT', place);
-
-      if (place && this.drawer) {
+      if (place) {
         this.drawer.show();
       } else {
         this.drawer.hide()
@@ -40,13 +41,20 @@ export class Drawers {
   ngAfterViewInit() {
     const drawerElement = document.getElementById('drawer-swipe');
 
+    console.log('drawerElement', drawerElement);
+
     if (drawerElement) {
       this.drawer = new Drawer(drawerElement, {
         placement: 'bottom',
         edge: true,
-        edgeOffset: 'bottom-[60px]'
+        edgeOffset: 'bottom-[60px]',
+        backdrop: false
       });
     }
+    if (this.mapState.selectedPlace()) {
+      this.drawer.show();
+    }
+
   }
 
   toggleDrawer() {
