@@ -22,13 +22,13 @@ export class Drawers {
   private drawer!: DrawerInterface;
 
   constructor() {
-    console.log('DRAWER CREADO');
+   
 
     effect(() => {
 
       const place = this.mapState.selectedPlace();
       if (!this.drawer) return;
-      // console.log('DRAWER EFFECT', place);
+
 
       if (place) {
         this.drawer.show();
