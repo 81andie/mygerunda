@@ -71,7 +71,7 @@ export class MapComponent implements AfterViewInit, OnInit {
 
   selectedFeature = signal<Feature | null>(null);
 
-  public isSidebarVisible: boolean = false;
+  public isPopupVisible: boolean = false;
 
   public hotels: any = {};
   public mostRelevant: any = {}
@@ -135,14 +135,12 @@ export class MapComponent implements AfterViewInit, OnInit {
       })
 
 
-
-
   }
 
 
   ngOnInit(): void {
 
-    this.prueba()
+    this.cargarSitioAleatorio()
 
   }
 
@@ -297,9 +295,6 @@ export class MapComponent implements AfterViewInit, OnInit {
 
     })
 
-
-
-
   }
 
   cargarBtnHoteles() {
@@ -415,7 +410,7 @@ export class MapComponent implements AfterViewInit, OnInit {
 
 
   toggleSitioAleatorio(): void {
-    this.isSidebarVisible = !this.isSidebarVisible;
+    this.isPopupVisible = !this.isPopupVisible;
 
     console.log("hola")
   }
@@ -455,7 +450,7 @@ export class MapComponent implements AfterViewInit, OnInit {
 
 
 
-  prueba() {
+  cargarSitioAleatorio() {
 
     forkJoin({
       hoteles: this.HotelsGeoService.getLocalizationHotels(),
