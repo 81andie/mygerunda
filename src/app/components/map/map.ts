@@ -328,7 +328,7 @@ export class MapComponent implements AfterViewInit, OnInit {
 
 
   cargarBtnApartments() {
-    this.clearLayers(); // opcional
+    this.clearLayers();
 
     this.activeButton = 'apartaments';
 
@@ -339,7 +339,7 @@ export class MapComponent implements AfterViewInit, OnInit {
 
   cargarBtnCafeteries() {
 
-    this.clearLayers(); // opcional
+    this.clearLayers();
 
     this.activeButton = 'cafeteries';
 
@@ -352,7 +352,7 @@ export class MapComponent implements AfterViewInit, OnInit {
 
   cargarBtnRestaurants() {
 
-    this.clearLayers(); // opcional
+    this.clearLayers();
     this.activeButton = 'restaurants';
 
     this.CafeteriesGeoService.getLocalizationRestaurants().subscribe(data => {
@@ -364,7 +364,7 @@ export class MapComponent implements AfterViewInit, OnInit {
 
   cargarBtnPuntsInteres() {
 
-    this.clearLayers(); // opcional
+    this.clearLayers();
 
     this.activeButton = 'puntsInteres';
 
@@ -414,7 +414,7 @@ export class MapComponent implements AfterViewInit, OnInit {
 
 
 
-  toggleSidebar(): void {
+  toggleSitioAleatorio(): void {
     this.isSidebarVisible = !this.isSidebarVisible;
 
     console.log("hola")
