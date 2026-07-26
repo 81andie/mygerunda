@@ -28,6 +28,7 @@
                 "input": "public",
                 "output": "/"
               }
+
             ],
             "styles": [
               "node_modules/ol/ol.css",
