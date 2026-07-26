@@ -1,0 +1,347 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1",
+        "name": "La Vedette",
+        "url": "https://www.lavedetterestaurant.com/la-vedette-girona/",
+        "img": "vedette.jpg",
+        "direccio": "C. de la Barca 17",
+        "telf": "972 20 41 58",
+        "email": "lavedettecomandes@gmail.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.824374694214556,
+          41.988870486409525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2",
+        "name": "Creperie Bretone",
+        "url": "https://www.creperiebretonne.com/",
+        "img": "bretone.jpg",
+        "direccio": "Cort Reial, 14",
+        "telf": "602 10 92 29 // 972 218 120",
+        "email": "girona@creperiebretonne.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.824935853154271,
+          41.985544337433666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3",
+        "name": "Buffala",
+        "url": "https://www.buffalapizza.eu/",
+        "img": "buffala.jpg",
+        "direccio": "Carrer Nord 22,",
+        "telf": "972 71 26 84",
+        "email": "no té email"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8224995942143254,
+          41.9859096683203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4",
+        "name": "Cocolino",
+        "url": "https://www.restaurantcocolino.cat/",
+        "img": "cocolino.png",
+        "direccio": "Carrer de Pedret, 56",
+        "telf": "676 46 18 55 / 972 22 40 47",
+        "email": "info@restaurantcocolino.cat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82659107507821,
+          41.99350066341992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "5",
+        "name": "El Racó Girona. Pizzeria Mediterrània",
+        "url": "https://www.elraco.com/",
+        "img": "elracó.jpg",
+        "direccio": "Plaza de la Independencia",
+        "telf": "972 29 64 95",
+        "email": "no té email"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8238967923639664,
+          41.98577009331903
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6",
+        "name": "La Mafia se sienta a la mesa",
+        "url": "https://www.lafamigliarestaurantes.com/restaurantes/gerona/",
+        "img": "lamafia.jpg",
+        "direccio": "Carrer Figuerola, 24 17001 Girona",
+        "telf": "972604728",
+        "email": "girona@lamafia.es"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.81985545188576,
+          41.98571446880942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7",
+        "name": "Casa Ramen",
+        "url": "https://www.casa-ramen-girona.es/",
+        "img": "casaramen.jpg",
+        "direccio": "Avenida de Sant Francesc,5",
+        "telf": "698 20 09 11",
+        "email": "no té email"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.822545709557008,
+          41.98233057604541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "8",
+        "name": "",
+        "url": "https://www.install.yxpublicidad.com/apple-sushi/",
+        "img": "applesushi.jpg",
+        "direccio": "Avenida de Sant Francesc,4",
+        "telf": "972 09 30 47",
+        "email": "no té email"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8225532942183054,
+          41.98255480257131
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9",
+        "name": "Hiroshi Girona",
+        "url": "https://www.hiroshi.es/",
+        "img": "hiroshi.jpg",
+        "direccio": "Pujada Creu de Palau, 19,",
+        "telf": "872 21 96 93 / 69 75 75 009",
+        "email": "info@hiroshi.es"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.822585480725564,
+          41.982522901506066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "10",
+        "name": "Koyo",
+        "url": "https://www.koyosushi.eu/",
+        "img": "koyo.jpg",
+        "direccio": "Joaquim Vayreda 4",
+        "telf": "972 59 56 29",
+        "email": "no té email"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8164028942142307,
+          41.98516354532154
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "11",
+        "name": "TOFU",
+        "url": "https://www.tofu.cat/",
+        "img": "tofu.jpg",
+        "direccio": "Avinguda de Ramon Folch, 13",
+        "telf": "972 232 323",
+        "email": "info@tofu.cat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8216117230501023,
+          41.98634746799456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "12",
+        "name": "Udon",
+        "url": "https://www.udon.com/ca/restaurant/udon-girona",
+        "img": "udon.jpg",
+        "direccio": "C/Santa Clara 47",
+        "telf": "938526234",
+        "email": "customercare@udon.es"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8235291114074825,
+          41.985064320380026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "13",
+        "name": "Brots de Vi",
+        "url": "https://www.brotsdevi.cat/brots-de-vi/",
+        "img": "brotsVi.jpg",
+        "direccio": "C. Cort Reial, 1",
+        "telf": "972 212 121",
+        "email": "info@brotsdevi.cat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8253996365426794,
+          41.984820821063515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "14",
+        "name": "El Cul de la Lleona",
+        "url": "https://www.lalleonaxcatmandu.es/",
+        "img": "cullleona.jpg",
+        "direccio": "Carrer dels Calderers, 8",
+        "telf": "623 554 994",
+        "email": "no té email"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.824213578871444,
+          41.987660163934635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "15",
+        "name": "La Poma",
+        "url": "https://www.lapomaeslapera.net/",
+        "img": "lapoma.jpg",
+        "direccio": "Cort Reial 16",
+        "telf": "698 421 131",
+        "email": "restaurantlapomagirona@gmail.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8251786537360193,
+          41.98519207011818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "16",
+        "name": "La Probocadora",
+        "url": "https://www.laprobocadora.com/",
+        "img": "laprobocadora.jpg",
+        "direccio": "Carrer de les Hortes, 7",
+        "telf": "972 17 30 97",
+        "email": "info@laprobocadora.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8228365095571757,
+          41.984636371510334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "17",
+        "name": "La Regolta",
+        "url": "https://www.laregolta.com/",
+        "img": "laregolta.jpg",
+        "direccio": "Carrer de Santa Llúcia, 6,",
+        "telf": "872 26 22 65",
+        "email": "no té email"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.826208834139901,
+          41.98899917147723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "18",
+        "name": "Blanc",
+        "url": "https://www.andilana.com/",
+        "img": "Blanc.jpg",
+        "direccio": "c/del Nord 2",
+        "telf": "972 41 56 37",
+        "email": "no té email"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8228376788712173,
+          41.98492642076021
+        ]
+      }
+    }
+  ]
+}

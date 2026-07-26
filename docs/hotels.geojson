@@ -1,0 +1,434 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1",
+        "name": "Hotel Best Western Premier CMC Girona",
+        "url":"https://www.hotelcmcgirona.com/",
+        "img": "CMC.jpg",
+        "direccio": "Barcelona, 112.17003 Girona.",
+        "telf": "972400500",
+        "email": "info@hotelcmcgirona.com",
+        "estrelles":"4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8137910846,
+          41.9703441268
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2",
+        "name": "Hotel Carlemany",
+        "url": "https://www.hotelcarlemanygirona.com",
+        "img": "carlemany.jpg",
+        "direccio": "Plaça de Miquel Santaló. 17002 Girona.",
+        "telf": "972211212",
+        "email": "carlemany@carlemany.es",
+        "estrelles":"4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8211661113,
+          41.9787230499
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3",
+        "name": "Hotel Casa Cacao - El Celler de Can Roca",
+        "url": "https://www.hotelcasacacao.com/",
+        "img": "casacacao.jpg",
+        "direccio": "Carrer Ginesta, 2. 17002 Girona.",
+        "telf": "972282828",
+        "email": "nfo@hotelcasacacao.com",
+        "estrelles":"4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         2.82271,
+        41.98178
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4",
+        "name": "Hotel Ciutat de Girona",
+        "url": "https://www.hotelciutatdegirona.com/es",
+        "img": "ciutatGirona.jpg",
+        "direccio": "C/ Nord, 2. 17002 Girona.",
+        "telf": "972483038",
+        "email": "info@hotelciutatdegirona.com",
+        "estrelles":""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8229000713,
+          41.9846251202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "5",
+        "name": "Hotel Double Tree by Hilton",
+        "url": "https://www.girona.doubletreebyhilton.com",
+        "img": "DoubleTreeHilton.jpg",
+        "direccio": "Joan Pons, 1. 17001 Girona.",
+        "telf": "972414600",
+        "email": "info.dtgirona@urh-hoteliers.com",
+        "estrelles":"4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         2.811266724,
+         41.9833006784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6",
+        "name": "Hotel Gran Ultònia",
+        "url": "https://www.hotelsultoniagirona.com",
+        "img": "ultonia5.jpg",
+        "direccio": "Gran via Jaume I, 22. 17001 Girona.",
+        "telf": "972203850",
+        "email": "info@hotelsultoniagirona.com",
+        "estrelles":"4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         2.8210631003,
+         41.9853608315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7",
+        "name": "Hotel Històric ",
+        "url": "www.hotelhistoric.com",
+        "img": "https://www.historic.jpg",
+        "direccio": "C/ Bellmirall, 4 . 17004 Girona.",
+        "telf": "972 223 583",
+        "email": "info@hotelhistoric.com",
+        "estrelles":"4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82467,
+          41.98861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "8",
+        "name": "Hotel Museu Llegendes de Girona",
+        "url": "https://www.llegendeshotel.com",
+        "img": "llegendes.jpg",
+        "direccio": "Portal de la Barca, 4. 17004 Girona",
+        "telf": "972 220 905",
+        "email": "info@llegendeshotel.com",
+        "estrelles":"4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82461,
+          41.98862
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9",
+        "name": "Hotel Nord 1901",
+        "url":"https://www.nord1901.com",
+        "img": "nord.jpg",
+        "direccio": "C/del Nord 7-9. 17007 Girona.",
+        "telf": "972411522",
+        "email": "nfo@nord1901.com",
+        "estrelles":"4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8226940792,
+         41.9849040111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "10",
+        "name": "Hotel Palau de Bellavista by URH",
+        "url": "https://www.urhbellavistagironahotel.com/es/",
+        "img": "bellavista.jpg",
+        "direccio": "Pujada Polvorins, 1 . 17004 Girona.",
+        "telf": "872 080 670",
+        "email": "nfo.pbellavista@urh-hoteliers.com",
+        "estrelles":"4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8296762434,
+          41.9786188557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "11",
+        "name": "Hotel Palau Fugit",
+        "url": "https://www.palaufugit.com",
+        "img": "palaufugit.jpg",
+        "direccio": "Carrer Bonaventura Carreras i Peralta, 4. 17004 Girona.",
+        "telf": "872987362",
+        "email": "hola@palaufugit.com",
+        "estrelles":"4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82556,
+          41.98521
+        ]
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "12",
+        "name": "Hotel B&B Girona 3",
+        "url": "https://www.hotel-bb.es/es/",
+        "img": "bbGirona.jpg",
+        "direccio": "Camí dels Carlins, 10. 17190 Salt.",
+        "telf": "972439009",
+        "email": "girona@hotelbb.com",
+        "estrelles":"3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         2.78308,
+         41.96607
+        ]
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "13",
+        "name": "Hotel Costabella",
+        "url": "https://www.hotelcostabella.com",
+        "img": "costabella.png",
+        "direccio": "Avinguda de França, 61. 17007 Girona.",
+        "telf": "972202524",
+        "email": "reservas@hotelcostabella.com",
+        "estrelles":"3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8183573968,
+          41.9987045107
+        ]
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "14",
+        "name": "Hotel Peninsular",
+        "url": "https://www.hotelpeninsulargirona.com",
+        "img": "peninsular.png",
+        "direccio": "C/ Nou, 3 . 17001 Girona",
+        "telf": "972203800",
+        "email": "peninsular@novarahotels.com",
+        "estrelles":"3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         2.8223864217,
+         41.9826608685
+        ]
+      }
+    },
+
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "15",
+        "name": "Hotel Ultònia",
+        "url": "https://www.hotelsultoniagirona.com",
+        "img": "ultonia5.jpg",
+        "direccio": "Gran Via Jaume I, 22 . 17001 Girona.",
+        "telf": "972203850",
+        "email": "peninsular@novarahotels.com",
+        "estrelles":"3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         2.8213048147,
+         41.9852621329
+        ]
+      }
+    },
+
+      {
+      "type": "Feature",
+      "properties": {
+        "id": "16",
+        "name": "Hotel B&B Girona 2",
+        "url": "https://www.hotel-bb.es/ca/",
+        "img": "bbGirona2.jpg",
+        "direccio": "C/ Martí i Pol, 11. 17190 Salt.",
+        "telf": "972 439 487",
+        "email": "hotel.girona2@hotelbb.com",
+        "estrelles":"3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         2.78359,
+         41.96766
+        ]
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "17",
+        "name": "Hotel Europa",
+        "url": "https://www.hoteleuropagirona.com",
+        "img": "hotelEuropa.jpg",
+        "direccio": "C/ Juli Garreta, 21. 17002 Girona.",
+        "telf": "972 202 750",
+        "email": "info@hoteleuropagirona.com",
+        "estrelles":"2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         2.8191386715,
+         41.9785667712
+        ]
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "18",
+        "name": "Hotel Ibis Girona Costa Brava",
+        "url": "https://www.ibishotels.com",
+        "img": "hibisCostaBrava.jpg",
+        "direccio": "C/ Francesc Ferrer, 16-18 . 17006 Girona",
+        "telf": "972391538",
+        "email": "h6819-it@accor.com",
+        "estrelles":"2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         2.81759,
+         41.99814
+        ]
+      }
+    },
+
+      {
+      "type": "Feature",
+      "properties": {
+        "id": "19",
+        "name": "Hotel Erba by Pillow",
+        "url": "https://www.bypillow.com",
+        "img": "erbabypillow.jpg",
+        "direccio": "C/ Ultònia, 1 . 17002 Girona.",
+        "telf": "972201066",
+        "email": "erba@bypillow.com",
+        "estrelles":"2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         2.8235319369,
+         41.9787357042
+        ]
+      }
+    },
+
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "20",
+        "name": "Hotel The Bloom by Pillow",
+        "url": "https://www.bypillow.com",
+        "img": "bloombypillow.jpg",
+        "direccio": "C/ Joan Maragall, 10. 17002 Girona.",
+        "telf": "972 204 462",
+        "email": "hebloom@bypillow.com",
+        "estrelles":"2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         2.8215611864,
+        41.9798945346
+        ]
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "21",
+        "name": "Hotel Bestprice Girona",
+        "url": "https://www.hotelesbestprice.com/",
+        "img": "bestPriceGirona.png",
+        "direccio": "Carretera de Barcelona, 1. 17002 Girona.",
+        "telf": "972 753 688",
+        "email": "girona@hotelesbestprice.com",
+        "estrelles":"2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         2.8191033,
+        41.9814338
+        ]
+      }
+    }
+  ]
+
+
+}
