@@ -20,16 +20,16 @@ p{ font-family: "Dancing Script", cursive;
 }
 
 .img5{
-  background-color: url("/delicious-smoke-cooked-food.jpg");
+  background-image: url("/comida.jpg");
 }
 
 .img6{
-  background-color: url("/medium-shot-smiley-woman-posing.jpg");
+  background-image: url("/medium-shot-smiley-woman-posing.jpg");
 }
 
 
 .img7{
-  background-color:url("/beautiful-woman-traveling-alone-montenegro.jpg")
+  background-image:url("/beautiful-woman-traveling-alone-montenegro.jpg")
 }
 
 
