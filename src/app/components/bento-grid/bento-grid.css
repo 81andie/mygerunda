@@ -2,3 +2,41 @@ p{ font-family: "Dancing Script", cursive;
   font-weight: 900;
     border-radius:15px;
 }
+
+.img1{
+  background-image: url("/barrivell.jpg");
+}
+
+.img2{
+  background-image: url("/top-view-travel-items-arrangement.jpg");
+}
+
+.img3{
+  background-image: url("/flat-lay-map-magnifier-documents-cup-coffee-hands-woman.jpg");
+}
+
+.img4{
+  background-image: url("/banysarabs.jpg");
+}
+
+.img5{
+  background-color: url("/delicious-smoke-cooked-food.jpg");
+}
+
+.img6{
+  background-color: url("/medium-shot-smiley-woman-posing.jpg");
+}
+
+
+.img7{
+  background-color:url("/beautiful-woman-traveling-alone-montenegro.jpg")
+}
+
+
+.img8{
+  background-image: url("/tempsdeflors26.jpg");
+}
+
+
+
+
