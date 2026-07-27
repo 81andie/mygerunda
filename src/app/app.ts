@@ -1,7 +1,8 @@
 import { Component, signal, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NavigationEnd, RouterOutlet,Router} from '@angular/router';
 import { initFlowbite } from 'flowbite';
-import { Inicio } from './components/inicio/inicio';
+import { filter } from 'rxjs';
+
 
 
 
@@ -13,7 +14,18 @@ import { Inicio } from './components/inicio/inicio';
 })
 export class App  implements OnInit{
   protected readonly title = signal('myGerunda');
+
+   constructor(private router: Router) {}
+
+
    ngOnInit(): void {
     initFlowbite();
+
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(() => {
+        initFlowbite();
+      });
   }
-}
+  }
+
