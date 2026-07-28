@@ -1,11 +1,11 @@
 .map {
 
   width: 100%;
- 
+
 
 }
 
-button{
+button {
   padding: 12px;
   cursor: pointer;
 
@@ -28,10 +28,19 @@ button{
   font-weight: bold;
 }
 
-.hidden{
- display:none
+.hidden {
+  display: none
 }
 
 
 
 
+
+.ol-control{
+  position:absolute;
+  margin-top:100px !important;
+}
+
+.ol-touch .rotate-north {
+  top: 180px;
+}

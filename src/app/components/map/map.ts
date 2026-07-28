@@ -3,8 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
-
-
 import Fill from 'ol/style/Fill';
 import Stroke from 'ol/style/Stroke';
 
@@ -13,6 +11,7 @@ import { signal } from '@angular/core';
 import Style from 'ol/style/Style';
 import OverviewMap from 'ol/control/OverviewMap.js';
 import { defaults as defaultControls } from 'ol/control/defaults.js';
+import Control from 'ol/control/Control.js';
 import Map from 'ol/Map.js';
 import OSM from 'ol/source/OSM.js';
 import TileLayer from 'ol/layer/Tile.js';
@@ -38,6 +37,37 @@ import { MapFilterService } from '../../../services/map-filter.service';
 
 
 
+class RotateNorthControl extends Control {
+  
+  constructor() {
+   
+    const button = document.createElement('button');
+    button.innerHTML = 'N';
+
+    const element = document.createElement('div');
+    element.className = 'rotate-north ol-unselectable ol-control';
+    element.appendChild(button);
+
+    super({
+      element: element,
+  
+    });
+
+    button.addEventListener('click', () => {
+      const map = this.getMap();
+
+      if (map) {
+        map.getView().setRotation(0);
+      }
+    });
+  }
+
+ 
+}
+
+
+
+
 @Component({
   selector: 'app-map',
   imports: [CommonModule, NavbarMap, Drawers],
@@ -57,7 +87,7 @@ export class MapComponent implements AfterViewInit, OnInit {
   allPlaces: any[] = []
 
   constructor() {
-    console.log('MAP COMPONENT CREADO');
+    
   }
 
 
@@ -100,7 +130,7 @@ export class MapComponent implements AfterViewInit, OnInit {
 
 
     this.map = new Map({
-      controls: defaultControls().extend([this.overviewMapControl]),
+      controls: defaultControls().extend([this.overviewMapControl, new RotateNorthControl()]),
       layers: [
         new TileLayer({
           source: new OSM(),
@@ -489,7 +519,7 @@ export class MapComponent implements AfterViewInit, OnInit {
 
       setTimeout(() => {
         this.mostRelevant = null
-       // this.cdr.detectChanges()
+        // this.cdr.detectChanges()
       }, 3000)
 
 

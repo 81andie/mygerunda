@@ -11,3 +11,20 @@
 *{
   font-family: "Rubik", sans-serif;
 }
+
+
+.ol-control {
+  margin-top: 100px !important;
+}
+
+.rotate-north {
+  left: 10px !important;
+  right: auto !important;
+  top: 50% !important;
+  bottom: auto !important;
+  transform: translateY(-50%) !important;
+}
+
+.ol-touch .rotate-north {
+  top: 180px;
+}
