@@ -38,9 +38,9 @@ import { MapFilterService } from '../../../services/map-filter.service';
 
 
 class RotateNorthControl extends Control {
-  
+
   constructor() {
-   
+
     const button = document.createElement('button');
     button.innerHTML = 'N';
 
@@ -50,7 +50,7 @@ class RotateNorthControl extends Control {
 
     super({
       element: element,
-  
+
     });
 
     button.addEventListener('click', () => {
@@ -62,7 +62,7 @@ class RotateNorthControl extends Control {
     });
   }
 
- 
+
 }
 
 
@@ -87,7 +87,7 @@ export class MapComponent implements AfterViewInit, OnInit {
   allPlaces: any[] = []
 
   constructor() {
-    
+
   }
 
 
@@ -161,10 +161,7 @@ export class MapComponent implements AfterViewInit, OnInit {
         if (filter) {
           this.onButtonClick(filter);
         }
-
       })
-
-
   }
 
 
